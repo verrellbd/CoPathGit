@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         print("abc")
         print("asdfgh")
+        //verine
+        print("abc")
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
