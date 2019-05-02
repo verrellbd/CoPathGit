@@ -11,8 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        print("hello")
-        print("ac")
+        print("abc")
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
