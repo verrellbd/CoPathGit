@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     func start() {
-        
+        print("abc")
     }
 
     override func viewDidLoad() {
