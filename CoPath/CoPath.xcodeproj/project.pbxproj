@@ -13,6 +13,7 @@
 		261F49B7227AD2FF0050C89B /* CoPath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 261F49B5227AD2FF0050C89B /* CoPath.xcdatamodeld */; };
 		261F49B9227AD3000050C89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261F49B8227AD3000050C89B /* Assets.xcassets */; };
 		261F49BC227AD3000050C89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261F49BA227AD3000050C89B /* LaunchScreen.storyboard */; };
+		D99D90A9227AE05E00E9D173 /* View3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D90A8227AE05E00E9D173 /* View3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		261F49B8227AD3000050C89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		261F49BB227AD3000050C89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		261F49BD227AD3000050C89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99D90A8227AE05E00E9D173 /* View3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				261F49AE227AD2FF0050C89B /* AppDelegate.swift */,
 				261F49B0227AD2FF0050C89B /* ViewController.swift */,
+				D99D90A8227AE05E00E9D173 /* View3.swift */,
 				261F49B2227AD2FF0050C89B /* Main.storyboard */,
 				261F49B8227AD3000050C89B /* Assets.xcassets */,
 				261F49BA227AD3000050C89B /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99D90A9227AE05E00E9D173 /* View3.swift in Sources */,
 				261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */,
 				261F49B7227AD2FF0050C89B /* CoPath.xcdatamodeld in Sources */,
 				261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */,
