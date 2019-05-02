@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    func start() {
+        
+    }
 
     override func viewDidLoad() {
         print("abc")
