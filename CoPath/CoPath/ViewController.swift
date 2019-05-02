@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     func start() {
         print("abc")
+        print("dfgh")
+        
     }
 
     override func viewDidLoad() {
