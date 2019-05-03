@@ -15,17 +15,21 @@ class addPlanController: UIViewController {
     @IBOutlet weak var endField: UITextField!
     
     let datePicker = UIDatePicker()
+    let endPicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         datePicker.datePickerMode = .date
         datePicker.addTarget(self, action: #selector(addPlanController.dateChanged(datePicker:)), for: .valueChanged)
-        startField.inputView = datePicker
+        endPicker.datePickerMode = .date
+        endPicker.addTarget(self, action: #selector(addPlanController.endDateChanged(endPicker:)), for: .valueChanged)
+        //startField.inputView = datePicker
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(addPlanController.viewTapped(gestureRecognize:)))
         
         view.addGestureRecognizer(tapGesture)
         startField.inputView = datePicker
+        endField.inputView = endPicker
         // Do any additional setup after loading the view.
     }
     
@@ -37,6 +41,13 @@ class addPlanController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         startField.text = dateFormatter.string(from: datePicker.date)
+        view.endEditing(true)
+    }
+    
+    @objc func endDateChanged(endPicker : UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        endField.text = dateFormatter.string(from: endPicker.date)
         view.endEditing(true)
     }
     
