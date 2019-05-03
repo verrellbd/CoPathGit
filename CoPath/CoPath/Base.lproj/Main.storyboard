@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqa-ZX-gxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1589.8550724637682" y="778.79464285714278"/>
+            <point key="canvasLocation" x="1716" y="779"/>
         </scene>
         <!--Profile-->
         <scene sceneID="rXa-c1-ROj">
@@ -197,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgU-p0-Mu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2811.594202898551" y="1477.9017857142856"/>
+            <point key="canvasLocation" x="2938" y="1478"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="5Ym-Xe-tKB">
@@ -273,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isT-3y-uVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4249" y="1478"/>
+            <point key="canvasLocation" x="4374" y="1478"/>
         </scene>
         <!--Add Plan-->
         <scene sceneID="gk9-vT-6bQ">
@@ -340,7 +340,7 @@
         <!--New Trip-->
         <scene sceneID="4QP-Sn-0fg">
             <objects>
-                <viewController id="n2F-aY-Ra3" sceneMemberID="viewController">
+                <viewController id="n2F-aY-Ra3" customClass="addPlanController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ni9-yW-JBZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,6 +388,10 @@
                         <viewLayoutGuide key="safeArea" id="v7y-94-lxT"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Trip" id="x6z-kE-ltv"/>
+                    <connections>
+                        <outlet property="endDate" destination="K7m-Pr-gmT" id="uui-Kg-yKj"/>
+                        <outlet property="startField" destination="Paa-Go-ijG" id="KQu-pD-71f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOT-l1-aCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -433,7 +437,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vr5-gu-lsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3532" y="1478"/>
+            <point key="canvasLocation" x="3658" y="1478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hgj-Sm-YFf">
@@ -455,7 +459,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kmb-gA-vU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2081" y="1478"/>
+            <point key="canvasLocation" x="2206" y="1478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KqW-zC-o6S">
