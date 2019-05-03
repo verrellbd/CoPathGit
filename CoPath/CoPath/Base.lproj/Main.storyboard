@@ -389,7 +389,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Trip" id="x6z-kE-ltv"/>
                     <connections>
-                        <outlet property="endDate" destination="K7m-Pr-gmT" id="uui-Kg-yKj"/>
+                        <outlet property="endField" destination="K7m-Pr-gmT" id="4pz-ed-8YO"/>
                         <outlet property="startField" destination="Paa-Go-ijG" id="KQu-pD-71f"/>
                     </connections>
                 </viewController>
