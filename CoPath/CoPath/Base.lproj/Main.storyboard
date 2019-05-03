@@ -468,10 +468,10 @@
             </objects>
             <point key="canvasLocation" x="3257.971014492754" y="-581.25"/>
         </scene>
-        <!--View Controller-->
+        <!--City View Controller-->
         <scene sceneID="1Va-tc-8eS">
             <objects>
-                <viewController id="nC9-B0-xXk" sceneMemberID="viewController">
+                <viewController id="nC9-B0-xXk" customClass="CityViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L5P-GN-eeE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -529,6 +529,7 @@
                         <viewLayoutGuide key="safeArea" id="PZG-4e-3rU"/>
                     </view>
                     <connections>
+                        <outlet property="cityList" destination="yZP-Tv-ctt" id="4Ld-67-0VJ"/>
                         <segue destination="i1f-bY-pBa" kind="show" identifier="CityToDetail" id="nU7-gg-pVu"/>
                     </connections>
                 </viewController>
