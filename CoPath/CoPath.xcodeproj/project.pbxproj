@@ -16,6 +16,7 @@
 		261F49BC227AD3000050C89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261F49BA227AD3000050C89B /* LaunchScreen.storyboard */; };
 		D98F5A65227C9151007C24C5 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A64227C9151007C24C5 /* CityViewController.swift */; };
 		D98F5A67227C9226007C24C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A66227C9226007C24C5 /* Image.swift */; };
+		D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6A227C95AA007C24C5 /* CityCell.swift */; };
 		D99D90CC227C233000E9D173 /* addPlanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D90CB227C233000E9D173 /* addPlanController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		261F49BD227AD3000050C89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98F5A64227C9151007C24C5 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D98F5A66227C9226007C24C5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		D98F5A6A227C95AA007C24C5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		D99D90CB227C233000E9D173 /* addPlanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlanController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */,
 				D99D90CB227C233000E9D173 /* addPlanController.swift */,
 				D98F5A64227C9151007C24C5 /* CityViewController.swift */,
+				D98F5A6A227C95AA007C24C5 /* CityCell.swift */,
 				D98F5A66227C9226007C24C5 /* Image.swift */,
 				261F49B2227AD2FF0050C89B /* Main.storyboard */,
 				261F49B8227AD3000050C89B /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 			files = (
 				D98F5A67227C9226007C24C5 /* Image.swift in Sources */,
 				261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */,
+				D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */,
 				0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */,
 				261F49B7227AD2FF0050C89B /* CoPath.xcdatamodeld in Sources */,
 				D99D90CC227C233000E9D173 /* addPlanController.swift in Sources */,
