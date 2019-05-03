@@ -529,7 +529,7 @@
                         <viewLayoutGuide key="safeArea" id="PZG-4e-3rU"/>
                     </view>
                     <connections>
-                        <segue destination="i1f-bY-pBa" kind="show" id="nU7-gg-pVu"/>
+                        <segue destination="i1f-bY-pBa" kind="show" identifier="CityToDetail" id="nU7-gg-pVu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPG-MM-uNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
