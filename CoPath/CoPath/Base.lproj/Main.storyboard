@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Plans-->
         <scene sceneID="7XW-j8-i2X">
             <objects>
                 <viewController id="ePA-57-PX6" sceneMemberID="viewController">
@@ -20,13 +20,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kRF-5j-c4l"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="dsv-Yc-Xw4"/>
+                    <tabBarItem key="tabBarItem" title="Plans" id="dsv-Yc-Xw4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="km4-yy-IvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="682" y="85"/>
         </scene>
-        <!--Item-->
+        <!--Notification-->
         <scene sceneID="kog-dE-wbt">
             <objects>
                 <viewController id="j8a-2b-dVE" sceneMemberID="viewController">
@@ -43,13 +43,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZYy-B4-YA6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="3l1-TA-Nrm"/>
+                    <tabBarItem key="tabBarItem" title="Notification" id="3l1-TA-Nrm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqa-ZX-gxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="679.71014492753625" y="778.79464285714278"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="rXa-c1-ROj">
             <objects>
                 <viewController id="3iq-Kl-rpF" sceneMemberID="viewController">
@@ -99,7 +99,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9L5-vn-IIU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="yde-Fe-BjA"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="yde-Fe-BjA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw6-0k-wQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +200,6 @@
         <!--Sign In-->
         <scene sceneID="5Ym-Xe-tKB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="isT-3y-uVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="B0A-PW-cOS" customClass="ViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R2T-2e-zEV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -270,10 +269,11 @@
                         <barButtonItem key="leftBarButtonItem" title="Back" id="3am-sq-XHH"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="isT-3y-uVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4249" y="1478"/>
         </scene>
-        <!--Item 1-->
+        <!--Add Plan-->
         <scene sceneID="gk9-vT-6bQ">
             <objects>
                 <viewController id="YgX-FU-7LH" sceneMemberID="viewController">
@@ -326,7 +326,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0Jz-gM-MZo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="fjj-gk-Asf"/>
+                    <tabBarItem key="tabBarItem" title="Add Plan" id="fjj-gk-Asf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reR-fR-vEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
