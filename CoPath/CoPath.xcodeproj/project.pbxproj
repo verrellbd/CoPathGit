@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */; };
 		261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261F49AE227AD2FF0050C89B /* AppDelegate.swift */; };
 		261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261F49B0227AD2FF0050C89B /* ViewController.swift */; };
 		261F49B4227AD2FF0050C89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261F49B2227AD2FF0050C89B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		261F49AB227AD2FF0050C89B /* CoPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261F49AE227AD2FF0050C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261F49B0227AD2FF0050C89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				261F49AE227AD2FF0050C89B /* AppDelegate.swift */,
 				261F49B0227AD2FF0050C89B /* ViewController.swift */,
 				261F49B2227AD2FF0050C89B /* Main.storyboard */,
+				0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */,
 				261F49B8227AD3000050C89B /* Assets.xcassets */,
 				261F49BA227AD3000050C89B /* LaunchScreen.storyboard */,
 				261F49BD227AD3000050C89B /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */,
+				0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */,
 				261F49B7227AD2FF0050C89B /* CoPath.xcdatamodeld in Sources */,
 				D99D90CC227C233000E9D173 /* addPlanController.swift in Sources */,
 				261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */,
