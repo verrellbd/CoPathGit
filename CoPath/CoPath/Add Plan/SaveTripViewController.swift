@@ -20,16 +20,30 @@ class SaveTripViewController: UIViewController {
     
     @IBAction func routeChanged(_ sender: UISegmentedControl) {
         if routeSeg.selectedSegmentIndex == 0 {
-            Lists = createList(route: 0)
-            self.listTable.reloadData()
+            Lists[0] = ListDestination(title: "Test1", time: "00.00-01.00")
+            Lists[1] = ListDestination(title: "Test2", time: "00.00-01.00")
+            Lists[2] = ListDestination(title: "Test3", time: "00.00-01.00")
+            Lists[3] = ListDestination(title: "Test4", time: "00.00-01.00")
+            listTable.reloadData()
         } else if routeSeg.selectedSegmentIndex == 1 {
-            Lists = createList(route: 1)
-            self.listTable.reloadData()
+            print("Ok")
+            Lists[0] = ListDestination(title: "Test1", time: "00.00-01.00")
+            Lists[1] = ListDestination(title: "Test3", time: "00.00-01.00")
+            Lists[2] = ListDestination(title: "Test2", time: "00.00-01.00")
+            Lists[3] = ListDestination(title: "Test4", time: "00.00-01.00")
+            //listTable.reloadData()
         } else if routeSeg.selectedSegmentIndex == 2 {
-            Lists = createList(route: 2)
-            self.listTable.reloadData()
+            Lists[0] = ListDestination(title: "Test1", time: "00.00-01.00")
+            Lists[1] = ListDestination(title: "Test2", time: "00.00-01.00")
+            Lists[2] = ListDestination(title: "Test3", time: "00.00-01.00")
+            Lists[3] = ListDestination(title: "Test4", time: "00.00-01.00")
+            listTable.reloadData()
         } else {
-            Lists = createList(route: 3)
+            Lists[0] = ListDestination(title: "Test1", time: "00.00-01.00")
+            Lists[1] = ListDestination(title: "Test2", time: "00.00-01.00")
+            Lists[2] = ListDestination(title: "Test3", time: "00.00-01.00")
+            Lists[3] = ListDestination(title: "Test4", time: "00.00-01.00")
+            listTable.reloadData()
         }
         
     }
