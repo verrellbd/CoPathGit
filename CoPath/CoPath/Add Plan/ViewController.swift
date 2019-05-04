@@ -53,7 +53,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     //changing images per cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? PlaceRecommendationCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "placeRecommendationCell", for: indexPath) as? PlaceRecommendationCell
         cell?.img.image = placeImages[indexPath.row]
         return cell!
     }
