@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqa-ZX-gxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715.9420289855075" y="778.79464285714278"/>
+            <point key="canvasLocation" x="1591" y="779"/>
         </scene>
         <!--Profile-->
         <scene sceneID="rXa-c1-ROj">
@@ -570,22 +570,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPG-MM-uNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3289.8550724637685" y="-581.25"/>
+            <point key="canvasLocation" x="3188" y="-581"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail City View Controller-->
         <scene sceneID="uCT-x7-ZJM">
             <objects>
-                <viewController id="i1f-bY-pBa" sceneMemberID="viewController">
+                <viewController id="i1f-bY-pBa" customClass="DetailCityViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcg-bR-rUn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kor-EG-Udt">
+                                <rect key="frame" x="0.0" y="187" width="414" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CGG-07-88T"/>
                     </view>
+                    <connections>
+                        <outlet property="titleImage" destination="Kor-EG-Udt" id="vms-zm-RdJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeM-h7-0s7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4028" y="-581"/>
+            <point key="canvasLocation" x="4027.5362318840585" y="-581.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zIp-LT-GUZ">

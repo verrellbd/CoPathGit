@@ -18,6 +18,7 @@
 		D98F5A65227C9151007C24C5 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A64227C9151007C24C5 /* CityViewController.swift */; };
 		D98F5A67227C9226007C24C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A66227C9226007C24C5 /* Image.swift */; };
 		D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6A227C95AA007C24C5 /* CityCell.swift */; };
+		D98F5A6D227D2520007C24C5 /* DetailCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */; };
 		D99D90CC227C233000E9D173 /* addPlanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D90CB227C233000E9D173 /* addPlanController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		D98F5A64227C9151007C24C5 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D98F5A66227C9226007C24C5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D98F5A6A227C95AA007C24C5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCityViewController.swift; sourceTree = "<group>"; };
 		D99D90CB227C233000E9D173 /* addPlanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlanController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,8 +77,9 @@
 				D98F5A64227C9151007C24C5 /* CityViewController.swift */,
 				D98F5A6A227C95AA007C24C5 /* CityCell.swift */,
 				D98F5A66227C9226007C24C5 /* Image.swift */,
-				261F49B2227AD2FF0050C89B /* Main.storyboard */,
+				D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */,
 				2673C8EB227CB6540015D61D /* PlaceRecommendationCell.swift */,
+				261F49B2227AD2FF0050C89B /* Main.storyboard */,
 				261F49B8227AD3000050C89B /* Assets.xcassets */,
 				261F49BA227AD3000050C89B /* LaunchScreen.storyboard */,
 				261F49BD227AD3000050C89B /* Info.plist */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98F5A6D227D2520007C24C5 /* DetailCityViewController.swift in Sources */,
 				D98F5A67227C9226007C24C5 /* Image.swift in Sources */,
 				261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */,
 				D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */,

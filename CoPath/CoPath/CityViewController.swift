@@ -20,9 +20,9 @@ class CityViewController: UIViewController {
     }
     
     func createArray() -> [Image]{
-        let images1 = Image(image1: #imageLiteral(resourceName: "test4"), image2: #imageLiteral(resourceName: "test3"), image3: #imageLiteral(resourceName: "test2"))
-        let images2 = Image(image1: #imageLiteral(resourceName: "test5"), image2: #imageLiteral(resourceName: "test6"), image3: #imageLiteral(resourceName: "test6"))
-        let images3 = Image(image1: #imageLiteral(resourceName: "test6"), image2: #imageLiteral(resourceName: "test1"), image3: #imageLiteral(resourceName: "test4"))
+        let images1 = Image(image1: #imageLiteral(resourceName: "place3"), image2: #imageLiteral(resourceName: "test5"), image3: #imageLiteral(resourceName: "place1"))
+        let images2 = Image(image1: #imageLiteral(resourceName: "test5"), image2: #imageLiteral(resourceName: "place1"), image3: #imageLiteral(resourceName: "place4"))
+        let images3 = Image(image1: #imageLiteral(resourceName: "place3"), image2: #imageLiteral(resourceName: "test5"), image3: #imageLiteral(resourceName: "place3"))
         return [images1,images2,images3]
     }
 
@@ -35,6 +35,12 @@ class CityViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CityToDetail" {
+            let destVC = segue.destination as! DetailCityViewController
+            destVC.image = sender as? Image
+        }
+    }
 }
 
 extension CityViewController: UITableViewDelegate, UITableViewDataSource {
@@ -50,5 +56,13 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let image = images[indexPath.row]
+        performSegue(withIdentifier: "CityToDetail", sender: image)
+    }
     
 }
