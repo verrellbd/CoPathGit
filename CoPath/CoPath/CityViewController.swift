@@ -9,7 +9,8 @@
 import UIKit
 
 class CityViewController: UIViewController {
-    @IBOutlet weak var cityList: UITableView!
+   
+    @IBOutlet weak var tableView: UITableView!
     var images : [Image] = []
     
     override func viewDidLoad() {
@@ -19,9 +20,9 @@ class CityViewController: UIViewController {
     }
     
     func createArray() -> [Image]{
-        let images1 = Image(image1: #imageLiteral(resourceName: "beginner-first-app"), image2: #imageLiteral(resourceName: "beginner-first-app"), image3: #imageLiteral(resourceName: "beginner-first-app"))
-        let images2 = Image(image1: #imageLiteral(resourceName: "beginner-first-app"), image2: #imageLiteral(resourceName: "beginner-first-app"), image3: #imageLiteral(resourceName: "beginner-first-app"))
-        let images3 = Image(image1: #imageLiteral(resourceName: "beginner-first-app"), image2: #imageLiteral(resourceName: "beginner-first-app"), image3: #imageLiteral(resourceName: "beginner-first-app"))
+        let images1 = Image(image1: #imageLiteral(resourceName: "place3"), image2: #imageLiteral(resourceName: "test5"), image3: #imageLiteral(resourceName: "place1"))
+        let images2 = Image(image1: #imageLiteral(resourceName: "test5"), image2: #imageLiteral(resourceName: "place1"), image3: #imageLiteral(resourceName: "place4"))
+        let images3 = Image(image1: #imageLiteral(resourceName: "place3"), image2: #imageLiteral(resourceName: "test5"), image3: #imageLiteral(resourceName: "place3"))
         return [images1,images2,images3]
     }
 
@@ -34,6 +35,12 @@ class CityViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CityToDetail" {
+            let destVC = segue.destination as! DetailCityViewController
+            destVC.image = sender as? Image
+        }
+    }
 }
 
 extension CityViewController: UITableViewDelegate, UITableViewDataSource {
@@ -43,11 +50,19 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let image = images[indexPath.row]
-        let cell = cityList.dequeueReusableCell(withIdentifier: "CityCell") as! CityCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell") as! CityCell
         cell.setImage(image: image)
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let image = images[indexPath.row]
+        performSegue(withIdentifier: "CityToDetail", sender: image)
+    }
     
 }
