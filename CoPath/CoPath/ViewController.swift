@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     
     @IBAction func newTripTap(_ sender: UIButton) {
         self.tabBarController?.tabBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
-        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.isHidden = true
     }
 }
 
