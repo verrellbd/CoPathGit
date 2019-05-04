@@ -539,6 +539,30 @@
             </objects>
             <point key="canvasLocation" x="5823.188405797102" y="-581.25"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Baz-Sn-kdf">
+            <objects>
+                <viewController id="bEM-xJ-N8o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ig-LZ-DYK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLl-ka-Ogw">
+                                <rect key="frame" x="168" y="393" width="78" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wbA-zn-4DB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agt-Mh-fgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4086" y="-1316"/>
+        </scene>
         <!--Pick a City-->
         <scene sceneID="1Va-tc-8eS">
             <objects>
@@ -609,7 +633,11 @@
                         <viewLayoutGuide key="safeArea" id="PZG-4e-3rU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pick a City" id="mvI-gu-wMk">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7op-Ue-hC1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7op-Ue-hC1">
+                            <connections>
+                                <segue destination="bEM-xJ-N8o" kind="show" id="eoY-ud-dGH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="yZP-Tv-ctt" id="ZM8-yY-XHb"/>
