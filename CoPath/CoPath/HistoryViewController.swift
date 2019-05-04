@@ -10,6 +10,8 @@ import UIKit
 
 class HistoryViewController: UIViewController {
 
+    @IBOutlet weak var historyTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +29,17 @@ class HistoryViewController: UIViewController {
     }
     */
 
+}
+
+extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        return cell
+    }
+    
+    
 }
