@@ -16,6 +16,7 @@ class CityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         images = createArray()
+        setupNavbar()
         // Do any additional setup after loading the view.
     }
     
@@ -24,6 +25,14 @@ class CityViewController: UIViewController {
         let images2 = Image(image1: #imageLiteral(resourceName: "test5"), image2: #imageLiteral(resourceName: "place1"), image3: #imageLiteral(resourceName: "place4"))
         let images3 = Image(image1: #imageLiteral(resourceName: "place3"), image2: #imageLiteral(resourceName: "test5"), image3: #imageLiteral(resourceName: "place3"))
         return [images1,images2,images3]
+    }
+    
+    func setupNavbar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.title = "Pick a City"
     }
 
     /*
