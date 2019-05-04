@@ -11,7 +11,8 @@ import UIKit
 class HistoryViewController: UIViewController {
 
     @IBOutlet weak var historyTableView: UITableView!
-    
+    let list = ["School Break to Bali", "New Year Vacation"]
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,6 +37,9 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
         return 2
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         return cell
