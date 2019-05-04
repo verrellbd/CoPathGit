@@ -537,7 +537,7 @@
         <!--Fun Trip 01-->
         <scene sceneID="jAt-Cr-HY5">
             <objects>
-                <viewController id="I15-qU-REh" sceneMemberID="viewController">
+                <viewController id="I15-qU-REh" customClass="SaveTripViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tNH-tH-2dC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -566,7 +566,11 @@
                         <viewLayoutGuide key="safeArea" id="nwT-QE-Av9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Fun Trip 01" id="nve-g9-We4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ltS-lT-rmc"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ltS-lT-rmc">
+                            <connections>
+                                <segue destination="uRC-T9-TCC" kind="show" id="6LK-CS-sQx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjS-OL-MFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -898,4 +902,7 @@
         <image name="profileImageProfile" width="371" height="371"/>
         <image name="profileLogo" width="25" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hNz-vD-Rkf"/>
+    </inferredMetricsTieBreakers>
 </document>
