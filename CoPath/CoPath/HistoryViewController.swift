@@ -10,6 +10,8 @@ import UIKit
 
 class HistoryViewController: UIViewController {
 
+    @IBOutlet weak var historyTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
