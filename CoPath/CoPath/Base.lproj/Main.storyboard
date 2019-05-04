@@ -561,8 +561,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nwT-QE-Av9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Fun Trip 01" id="gNp-aD-k7f">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mgj-AE-q4h"/>
+                    <navigationItem key="navigationItem" title="Fun Trip 01" id="nve-g9-We4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ltS-lT-rmc"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjS-OL-MFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
