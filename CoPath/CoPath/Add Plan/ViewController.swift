@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = false
         navigationController?.navigationBar.isHidden = true
     }
+    
 }
 
 //extension for collection view -> image slider

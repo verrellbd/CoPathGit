@@ -568,6 +568,7 @@
                     <navigationItem key="navigationItem" title="Fun Trip 01" id="nve-g9-We4">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ltS-lT-rmc">
                             <connections>
+                                <action selector="SaveTapped:" destination="I15-qU-REh" id="Hpc-is-Hcq"/>
                                 <segue destination="uRC-T9-TCC" kind="show" id="6LK-CS-sQx"/>
                             </connections>
                         </barButtonItem>
@@ -935,6 +936,6 @@
         <image name="profileLogo" width="25" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hNz-vD-Rkf"/>
+        <segue reference="6LK-CS-sQx"/>
     </inferredMetricsTieBreakers>
 </document>

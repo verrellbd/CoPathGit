@@ -21,6 +21,7 @@
 		2673C8F6227DC7560015D61D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8F5227DC7560015D61D /* NotificationViewController.swift */; };
 		2673C8F8227DD1F00015D61D /* RecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8F7227DD1F00015D61D /* RecommendationCell.swift */; };
 		2673C8FA227DD8A10015D61D /* AddDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8F9227DD8A10015D61D /* AddDestinationViewController.swift */; };
+		2673C8FC227DDADF0015D61D /* SaveTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */; };
 		D98F5A65227C9151007C24C5 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A64227C9151007C24C5 /* CityViewController.swift */; };
 		D98F5A67227C9226007C24C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A66227C9226007C24C5 /* Image.swift */; };
 		D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6A227C95AA007C24C5 /* CityCell.swift */; };
@@ -45,6 +46,7 @@
 		2673C8F5227DC7560015D61D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		2673C8F7227DD1F00015D61D /* RecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCell.swift; sourceTree = "<group>"; };
 		2673C8F9227DD8A10015D61D /* AddDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDestinationViewController.swift; sourceTree = "<group>"; };
+		2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTripViewController.swift; sourceTree = "<group>"; };
 		D98F5A64227C9151007C24C5 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D98F5A66227C9226007C24C5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D98F5A6A227C95AA007C24C5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		2673C8EF227DC5550015D61D /* Add Plan */ = {
 			isa = PBXGroup;
 			children = (
+				2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */,
 				2673C8F9227DD8A10015D61D /* AddDestinationViewController.swift */,
 				2673C8EB227CB6540015D61D /* PlaceRecommendationCell.swift */,
 				261F49B0227AD2FF0050C89B /* ViewController.swift */,
@@ -218,6 +221,7 @@
 				2673C8EC227CB6540015D61D /* PlaceRecommendationCell.swift in Sources */,
 				0D7CC48B227D2EF600962C5F /* HistoryViewController.swift in Sources */,
 				0D7CC48D227D43E400962C5F /* OnGoingViewController.swift in Sources */,
+				2673C8FC227DDADF0015D61D /* SaveTripViewController.swift in Sources */,
 				0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */,
 				261F49B7227AD2FF0050C89B /* CoPath.xcdatamodeld in Sources */,
 				2673C8F6227DC7560015D61D /* NotificationViewController.swift in Sources */,
