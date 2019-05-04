@@ -10,6 +10,8 @@ import UIKit
 
 class OnGoingViewController: UIViewController {
 
+    var list = ["Holiday in Semarang", "Family Trip to Medan"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +29,43 @@ class OnGoingViewController: UIViewController {
     }
     */
 
+}
+
+extension OnGoingViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        } else {
+            return 2
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "May 2019"
+        } else {
+            return "June 2019"
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            // if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "mayCell", for: indexPath)
+            cell.textLabel?.text = "Fun Trip 01"
+            return cell
+            // }
+        } else {
+            let cell = (tableView.dequeueReusableCell(withIdentifier: "juneCell", for: indexPath))
+            cell.textLabel?.text = list[indexPath.row]
+            return cell
+        }
+    }
 }
