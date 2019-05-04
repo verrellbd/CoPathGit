@@ -545,12 +545,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjS-OL-MFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5871" y="-1317"/>
+            <point key="canvasLocation" x="5646" y="-1317"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Destination View Controller-->
         <scene sceneID="Baz-Sn-kdf">
             <objects>
-                <viewController id="bEM-xJ-N8o" sceneMemberID="viewController">
+                <viewController id="bEM-xJ-N8o" customClass="AddDestinationViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ig-LZ-DYK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -562,6 +562,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMz-zD-WbZ">
+                                <rect key="frame" x="153" y="611" width="108" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.46095070760000001" blue="0.32895039380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Co-Path"/>
+                                <connections>
+                                    <segue destination="I15-qU-REh" kind="show" id="1iC-Mq-V90"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wbA-zn-4DB"/>
@@ -569,7 +580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agt-Mh-fgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4296" y="-1316"/>
+            <point key="canvasLocation" x="4699" y="-1317"/>
         </scene>
         <!--Pick a City-->
         <scene sceneID="1Va-tc-8eS">
@@ -678,7 +689,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeM-h7-0s7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5871.0144927536239" y="-581.25"/>
+            <point key="canvasLocation" x="4699" y="-581"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zIp-LT-GUZ">

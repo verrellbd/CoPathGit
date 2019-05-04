@@ -21,9 +21,9 @@ class CityViewController: UIViewController {
     }
     
     func createArray() -> [Image]{
-        let images1 = Image(image1: #imageLiteral(resourceName: "place3"), image2: #imageLiteral(resourceName: "test5"), image3: #imageLiteral(resourceName: "place1"))
-        let images2 = Image(image1: #imageLiteral(resourceName: "test5"), image2: #imageLiteral(resourceName: "place1"), image3: #imageLiteral(resourceName: "place4"))
-        let images3 = Image(image1: #imageLiteral(resourceName: "place3"), image2: #imageLiteral(resourceName: "test5"), image3: #imageLiteral(resourceName: "place3"))
+        let images1 = Image(image1: #imageLiteral(resourceName: "headerPicPlacesOnlyWeKnow"), image2: #imageLiteral(resourceName: "mentawaiPicNotifMessage"), image3: #imageLiteral(resourceName: "cityPopUpAddCity"))
+        let images2 = Image(image1: #imageLiteral(resourceName: "cityPopUpAddCity"), image2: #imageLiteral(resourceName: "headerPicPlacesOnlyWeKnow"), image3: #imageLiteral(resourceName: "mentawaiPicNotifMessage"))
+        let images3 = Image(image1: #imageLiteral(resourceName: "mentawaiPicNotifMessage"), image2: #imageLiteral(resourceName: "cityPopUpAddCity"), image3: #imageLiteral(resourceName: "headerPicPlacesOnlyWeKnow"))
         return [images1,images2,images3]
     }
     
