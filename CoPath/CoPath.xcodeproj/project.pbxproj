@@ -10,6 +10,7 @@
 		0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */; };
 		0D7CC48B227D2EF600962C5F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */; };
 		0D7CC48D227D43E400962C5F /* OnGoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */; };
+		0D7CC48F227D886B00962C5F /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48E227D886B00962C5F /* notificationViewController.swift */; };
 		261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261F49AE227AD2FF0050C89B /* AppDelegate.swift */; };
 		261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261F49B0227AD2FF0050C89B /* ViewController.swift */; };
 		261F49B4227AD2FF0050C89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261F49B2227AD2FF0050C89B /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		D98F5A67227C9226007C24C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A66227C9226007C24C5 /* Image.swift */; };
 		D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6A227C95AA007C24C5 /* CityCell.swift */; };
 		D98F5A6D227D2520007C24C5 /* DetailCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */; };
-		D98F5A6F227D4602007C24C5 /* AddDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6E227D4602007C24C5 /* AddDestinationViewController.swift */; };
 		D99D90CC227C233000E9D173 /* addPlanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D90CB227C233000E9D173 /* addPlanController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +29,7 @@
 		0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingViewController.swift; sourceTree = "<group>"; };
+		0D7CC48E227D886B00962C5F /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		261F49AB227AD2FF0050C89B /* CoPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261F49AE227AD2FF0050C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261F49B0227AD2FF0050C89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		D98F5A66227C9226007C24C5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D98F5A6A227C95AA007C24C5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCityViewController.swift; sourceTree = "<group>"; };
-		D98F5A6E227D4602007C24C5 /* AddDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDestinationViewController.swift; sourceTree = "<group>"; };
 		D99D90CB227C233000E9D173 /* addPlanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlanController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,9 +85,8 @@
 				D98F5A66227C9226007C24C5 /* Image.swift */,
 				D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */,
 				2673C8EB227CB6540015D61D /* PlaceRecommendationCell.swift */,
-				0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */,
-				D98F5A6E227D4602007C24C5 /* AddDestinationViewController.swift */,
 				261F49B2227AD2FF0050C89B /* Main.storyboard */,
+				0D7CC48E227D886B00962C5F /* notificationViewController.swift */,
 				0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */,
 				0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */,
 				261F49B8227AD3000050C89B /* Assets.xcassets */,
@@ -172,9 +171,9 @@
 				D98F5A6D227D2520007C24C5 /* DetailCityViewController.swift in Sources */,
 				D98F5A67227C9226007C24C5 /* Image.swift in Sources */,
 				261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */,
-				D98F5A6F227D4602007C24C5 /* AddDestinationViewController.swift in Sources */,
 				D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */,
 				2673C8EC227CB6540015D61D /* PlaceRecommendationCell.swift in Sources */,
+				0D7CC48F227D886B00962C5F /* notificationViewController.swift in Sources */,
 				0D7CC48B227D2EF600962C5F /* HistoryViewController.swift in Sources */,
 				0D7CC48D227D43E400962C5F /* OnGoingViewController.swift in Sources */,
 				0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */,
