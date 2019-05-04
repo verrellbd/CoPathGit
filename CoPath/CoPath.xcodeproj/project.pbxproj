@@ -10,7 +10,6 @@
 		0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */; };
 		0D7CC48B227D2EF600962C5F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */; };
 		0D7CC48D227D43E400962C5F /* OnGoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */; };
-		0D7CC48F227D886B00962C5F /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48E227D886B00962C5F /* notificationViewController.swift */; };
 		261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261F49AE227AD2FF0050C89B /* AppDelegate.swift */; };
 		261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261F49B0227AD2FF0050C89B /* ViewController.swift */; };
 		261F49B4227AD2FF0050C89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261F49B2227AD2FF0050C89B /* Main.storyboard */; };
@@ -18,6 +17,8 @@
 		261F49B9227AD3000050C89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261F49B8227AD3000050C89B /* Assets.xcassets */; };
 		261F49BC227AD3000050C89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261F49BA227AD3000050C89B /* LaunchScreen.storyboard */; };
 		2673C8EC227CB6540015D61D /* PlaceRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8EB227CB6540015D61D /* PlaceRecommendationCell.swift */; };
+		2673C8F4227DC6F80015D61D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8F3227DC6F80015D61D /* ProfileViewController.swift */; };
+		2673C8F6227DC7560015D61D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8F5227DC7560015D61D /* NotificationViewController.swift */; };
 		D98F5A65227C9151007C24C5 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A64227C9151007C24C5 /* CityViewController.swift */; };
 		D98F5A67227C9226007C24C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A66227C9226007C24C5 /* Image.swift */; };
 		D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6A227C95AA007C24C5 /* CityCell.swift */; };
@@ -29,7 +30,6 @@
 		0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingViewController.swift; sourceTree = "<group>"; };
-		0D7CC48E227D886B00962C5F /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		261F49AB227AD2FF0050C89B /* CoPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261F49AE227AD2FF0050C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261F49B0227AD2FF0050C89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +39,8 @@
 		261F49BB227AD3000050C89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		261F49BD227AD3000050C89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2673C8EB227CB6540015D61D /* PlaceRecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRecommendationCell.swift; sourceTree = "<group>"; };
+		2673C8F3227DC6F80015D61D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2673C8F5227DC7560015D61D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D98F5A64227C9151007C24C5 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D98F5A66227C9226007C24C5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D98F5A6A227C95AA007C24C5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
@@ -76,25 +78,58 @@
 		261F49AD227AD2FF0050C89B /* CoPath */ = {
 			isa = PBXGroup;
 			children = (
+				2673C8EF227DC5550015D61D /* Add Plan */,
+				2673C8F0227DC57E0015D61D /* Plans */,
+				2673C8F1227DC5850015D61D /* Notification */,
+				2673C8F2227DC5960015D61D /* Profile */,
 				261F49AE227AD2FF0050C89B /* AppDelegate.swift */,
-				261F49B0227AD2FF0050C89B /* ViewController.swift */,
-				0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */,
-				D99D90CB227C233000E9D173 /* addPlanController.swift */,
-				D98F5A64227C9151007C24C5 /* CityViewController.swift */,
-				D98F5A6A227C95AA007C24C5 /* CityCell.swift */,
-				D98F5A66227C9226007C24C5 /* Image.swift */,
-				D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */,
-				2673C8EB227CB6540015D61D /* PlaceRecommendationCell.swift */,
 				261F49B2227AD2FF0050C89B /* Main.storyboard */,
-				0D7CC48E227D886B00962C5F /* notificationViewController.swift */,
-				0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */,
-				0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */,
 				261F49B8227AD3000050C89B /* Assets.xcassets */,
 				261F49BA227AD3000050C89B /* LaunchScreen.storyboard */,
 				261F49BD227AD3000050C89B /* Info.plist */,
 				261F49B5227AD2FF0050C89B /* CoPath.xcdatamodeld */,
 			);
 			path = CoPath;
+			sourceTree = "<group>";
+		};
+		2673C8EF227DC5550015D61D /* Add Plan */ = {
+			isa = PBXGroup;
+			children = (
+				2673C8EB227CB6540015D61D /* PlaceRecommendationCell.swift */,
+				261F49B0227AD2FF0050C89B /* ViewController.swift */,
+				D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */,
+				0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */,
+				D99D90CB227C233000E9D173 /* addPlanController.swift */,
+				D98F5A64227C9151007C24C5 /* CityViewController.swift */,
+				D98F5A6A227C95AA007C24C5 /* CityCell.swift */,
+				D98F5A66227C9226007C24C5 /* Image.swift */,
+			);
+			path = "Add Plan";
+			sourceTree = "<group>";
+		};
+		2673C8F0227DC57E0015D61D /* Plans */ = {
+			isa = PBXGroup;
+			children = (
+				0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */,
+				0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */,
+			);
+			path = Plans;
+			sourceTree = "<group>";
+		};
+		2673C8F1227DC5850015D61D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				2673C8F5227DC7560015D61D /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		2673C8F2227DC5960015D61D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2673C8F3227DC6F80015D61D /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +207,13 @@
 				D98F5A67227C9226007C24C5 /* Image.swift in Sources */,
 				261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */,
 				D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */,
+				2673C8F4227DC6F80015D61D /* ProfileViewController.swift in Sources */,
 				2673C8EC227CB6540015D61D /* PlaceRecommendationCell.swift in Sources */,
-				0D7CC48F227D886B00962C5F /* notificationViewController.swift in Sources */,
 				0D7CC48B227D2EF600962C5F /* HistoryViewController.swift in Sources */,
 				0D7CC48D227D43E400962C5F /* OnGoingViewController.swift in Sources */,
 				0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */,
 				261F49B7227AD2FF0050C89B /* CoPath.xcdatamodeld in Sources */,
+				2673C8F6227DC7560015D61D /* NotificationViewController.swift in Sources */,
 				D99D90CC227C233000E9D173 /* addPlanController.swift in Sources */,
 				261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */,
 				D98F5A65227C9151007C24C5 /* CityViewController.swift in Sources */,

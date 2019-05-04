@@ -1,20 +1,19 @@
 //
-//  notificationViewController.swift
+//  NotificationViewController.swift
 //  CoPath
 //
-//  Created by verine on 04/05/19.
+//  Created by Henkky on 04/05/19.
 //  Copyright © 2019 Henkky. All rights reserved.
 //
 
 import UIKit
-import UserNotifications
 
-class notificationViewController: UIViewController {
+class NotificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      
+        // Do any additional setup after loading the view.
     }
     
 
