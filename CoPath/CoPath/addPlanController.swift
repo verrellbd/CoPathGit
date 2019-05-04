@@ -19,6 +19,7 @@ class addPlanController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
         datePicker.datePickerMode = .date
         datePicker.addTarget(self, action: #selector(addPlanController.dateChanged(datePicker:)), for: .valueChanged)
         endPicker.datePickerMode = .date
