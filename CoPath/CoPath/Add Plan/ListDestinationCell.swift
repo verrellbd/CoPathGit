@@ -9,7 +9,11 @@
 import UIKit
 
 class ListDestinationCell: UITableViewCell {
-
+   
+    @IBOutlet weak var titleList: UILabel!
+    
+    @IBOutlet weak var timeList: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +24,11 @@ class ListDestinationCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setList(label: ListDestination) {
+        titleList.text = label.title
+        timeList.text = label.time
+     }
+
 
 }
