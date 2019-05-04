@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="1591.304347826087" y="84.375"/>
         </scene>
-        <!--History View Controller-->
+        <!--History-->
         <scene sceneID="HZR-Li-EDY">
             <objects>
-                <viewController id="xGm-f8-KgV" customClass="HistoryViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="History" id="xGm-f8-KgV" customClass="HistoryViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hSs-qO-rVQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

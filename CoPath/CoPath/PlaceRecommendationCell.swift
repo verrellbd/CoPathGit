@@ -8,6 +8,9 @@
 
 import UIKit
 
+//place recommendation cell
 class PlaceRecommendationCell: UICollectionViewCell {
+    
     @IBOutlet weak var img: UIImageView!
+    
 }
