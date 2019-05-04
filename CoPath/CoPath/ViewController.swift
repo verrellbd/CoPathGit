@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    var placeImages = [UIImage(named: "place1"),UIImage(named: "place2"),UIImage(named: "place3"),UIImage(named: "place4"),]
+    var placeImages = [UIImage(named: "place01AddPlan"),UIImage(named: "place02AddPlan")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
