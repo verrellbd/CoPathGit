@@ -55,16 +55,19 @@ extension OnGoingViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             // if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "mayCell", for: indexPath)
             cell.textLabel?.text = "Fun Trip 01"
+            cell.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
             return cell
             // }
         } else {
             let cell = (tableView.dequeueReusableCell(withIdentifier: "juneCell", for: indexPath))
             cell.textLabel?.text = list[indexPath.row]
+            cell.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
             return cell
         }
     }
