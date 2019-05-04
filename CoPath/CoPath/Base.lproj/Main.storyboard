@@ -37,12 +37,57 @@
                         <viewLayoutGuide key="safeArea" id="kRF-5j-c4l"/>
                     </view>
                     <navigationItem key="navigationItem" title="On Going Plans" id="WpX-x5-act">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="historyLogo" id="4p6-ED-B32"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="historyLogo" id="4p6-ED-B32">
+                            <connections>
+                                <segue destination="xGm-f8-KgV" kind="show" id="ffS-mz-eui"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="km4-yy-IvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1591.304347826087" y="84.375"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="HZR-Li-EDY">
+            <objects>
+                <viewController id="xGm-f8-KgV" customClass="HistoryViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSs-qO-rVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VZr-el-yNZ">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gUO-Kj-vfP">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gUO-Kj-vfP" id="8hS-8p-91h">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xGm-f8-KgV" id="YX7-Gg-aXr"/>
+                                    <outlet property="delegate" destination="xGm-f8-KgV" id="g3L-gY-iB2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b5h-ZQ-WBQ" firstAttribute="trailing" secondItem="VZr-el-yNZ" secondAttribute="trailing" id="5MU-ms-8BQ"/>
+                            <constraint firstItem="b5h-ZQ-WBQ" firstAttribute="bottom" secondItem="VZr-el-yNZ" secondAttribute="bottom" id="YpB-DM-1pu"/>
+                            <constraint firstItem="VZr-el-yNZ" firstAttribute="top" secondItem="b5h-ZQ-WBQ" secondAttribute="top" id="k3n-T4-qQw"/>
+                            <constraint firstItem="VZr-el-yNZ" firstAttribute="leading" secondItem="b5h-ZQ-WBQ" secondAttribute="leading" id="yzl-5C-TfC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b5h-ZQ-WBQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdG-fc-CxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2316" y="84"/>
         </scene>
         <!--Notification-->
         <scene sceneID="kog-dE-wbt">
