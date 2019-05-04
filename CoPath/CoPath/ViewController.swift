@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         // notification
         let content = UNMutableNotificationContent()
         content.title = "Do you want to see the beautiful of the sea? Or great surfing experience?"
-        content.body = "Come to Mentawai \n In this place you can feel the fresh air, with the blue water of the sea."
+        content.body = "Come to Mentawai \nIn this place you can feel the fresh air, with the blue water of the sea."
         content.sound = UNNotificationSound.default
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
