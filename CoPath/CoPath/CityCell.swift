@@ -12,7 +12,6 @@ class CityCell: UITableViewCell {
 
     @IBOutlet weak var imageCell2: UIImageView!
     @IBOutlet weak var imageCell3: UIImageView!
-    
     @IBOutlet weak var imageCell1: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()

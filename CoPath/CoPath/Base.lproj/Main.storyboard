@@ -162,8 +162,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bX-uv-tSI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bX-uv-tSI">
                                 <rect key="frame" x="84" y="445" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.46095070760000001" blue="0.32895039380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -185,8 +186,8 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Sign Out"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID : 2101724421" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tex-Ju-V9I">
-                                <rect key="frame" x="144" y="350" width="126" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="verine@email.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tex-Ju-V9I">
+                                <rect key="frame" x="144" y="350" width="138" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -205,10 +206,6 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="4bX-uv-tSI" firstAttribute="centerX" secondItem="9L5-vn-IIU" secondAttribute="centerX" id="Cfe-Uc-R6Q"/>
-                            <constraint firstItem="4bX-uv-tSI" firstAttribute="centerY" secondItem="9L5-vn-IIU" secondAttribute="centerY" id="yLS-il-X94"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9L5-vn-IIU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profileLogo" id="yde-Fe-BjA"/>
@@ -422,6 +419,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="New Trip"/>
                                 <connections>
+                                    <action selector="newTripTap:" destination="YgX-FU-7LH" eventType="touchUpInside" id="Pyx-8M-VCc"/>
                                     <segue destination="n2F-aY-Ra3" kind="show" id="DfA-kc-svY"/>
                                 </connections>
                             </button>

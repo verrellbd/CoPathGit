@@ -13,10 +13,15 @@ class ViewController: UIViewController {
     
     var placeImages = [UIImage(named: "place01AddPlan"),UIImage(named: "place02AddPlan")]
     
+    @IBAction func newTripTap(_ sender: UIButton) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
         navigationController?.navigationBar.prefersLargeTitles = false
-        // Do any additional setup after loading the view.
     }
 }
 
