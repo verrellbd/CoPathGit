@@ -16,19 +16,45 @@ class SaveTripViewController: UIViewController {
     @IBAction func SaveTapped(_ sender: UIBarButtonItem) {
         
     }
+    @IBOutlet weak var routeSeg: UISegmentedControl!
+    
+    @IBAction func routeChanged(_ sender: UISegmentedControl) {
+        if routeSeg.selectedSegmentIndex == 0 {
+            Lists = createList(route: 0)
+            self.listTable.reloadData()
+        } else if routeSeg.selectedSegmentIndex == 1 {
+            Lists = createList(route: 1)
+            self.listTable.reloadData()
+        } else if routeSeg.selectedSegmentIndex == 2 {
+            Lists = createList(route: 2)
+            self.listTable.reloadData()
+        } else {
+            Lists = createList(route: 3)
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Lists = createList()
+        Lists = createList(route : 0)
         // Do any additional setup after loading the view.
     }
     
-    func createList() -> [ListDestination] {
+    func createList(route : Int) -> [ListDestination] {
         let List1 = ListDestination(title: "Test1", time: "00.00-01.00")
         let List2 = ListDestination(title: "Test2", time: "00.00-01.00")
         let List3 = ListDestination(title: "Test3", time: "00.00-01.00")
         let List4 = ListDestination(title: "Test4", time: "00.00-01.00")
-        return [List1,List2,List3,List4]
+        if route == 0 {
+            return [List1,List2,List3,List4]
+        } else if route == 1 {
+            return [List2,List1,List3,List4]
+        } else if route == 2 {
+            return [List1,List2,List4,List3]
+        } else {
+            return [List4,List2,List3,List1]
+        }
+        
     }
     
 

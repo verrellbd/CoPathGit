@@ -594,6 +594,10 @@
                                     <segment title="Family Friendly Route"/>
                                     <segment title="Customized Route"/>
                                 </segments>
+                                <connections>
+                                    <action selector="routeChanged:" destination="I15-qU-REh" eventType="valueChanged" id="QMm-WQ-wSI"/>
+                                    <action selector="routeSeg:" destination="I15-qU-REh" eventType="valueChanged" id="zk0-N4-UQl"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -609,6 +613,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="listTable" destination="xhr-FL-uU7" id="tfH-0b-2NQ"/>
+                        <outlet property="routeSeg" destination="wxd-Oy-D1M" id="fmH-f0-G0R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjS-OL-MFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
