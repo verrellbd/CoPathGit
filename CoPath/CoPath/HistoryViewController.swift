@@ -37,11 +37,17 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
         return 2
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "January 2019"
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = (tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath))
+        cell.textLabel?.text = list[indexPath.row]
+        cell.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
         return cell
     }
     
