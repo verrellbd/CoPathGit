@@ -22,11 +22,11 @@
 		2673C8F8227DD1F00015D61D /* RecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8F7227DD1F00015D61D /* RecommendationCell.swift */; };
 		2673C8FA227DD8A10015D61D /* AddDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8F9227DD8A10015D61D /* AddDestinationViewController.swift */; };
 		2673C8FC227DDADF0015D61D /* SaveTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */; };
-		D98F5A65227C9151007C24C5 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A64227C9151007C24C5 /* CityViewController.swift */; };
+		D98F5A65227C9151007C24C5 /* PickCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A64227C9151007C24C5 /* PickCityViewController.swift */; };
 		D98F5A67227C9226007C24C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A66227C9226007C24C5 /* Image.swift */; };
 		D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6A227C95AA007C24C5 /* CityCell.swift */; };
 		D98F5A6D227D2520007C24C5 /* DetailCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */; };
-		D99D90CC227C233000E9D173 /* addPlanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D90CB227C233000E9D173 /* addPlanController.swift */; };
+		D99D90CC227C233000E9D173 /* NewTripVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D90CB227C233000E9D173 /* NewTripVIewController.swift */; };
 		D9B5A6F2227DE06F0076929D /* ListDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5A6F1227DE06F0076929D /* ListDestination.swift */; };
 		D9B5A6F4227DE08E0076929D /* ListDestinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5A6F3227DE08E0076929D /* ListDestinationCell.swift */; };
 /* End PBXBuildFile section */
@@ -49,11 +49,11 @@
 		2673C8F7227DD1F00015D61D /* RecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCell.swift; sourceTree = "<group>"; };
 		2673C8F9227DD8A10015D61D /* AddDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDestinationViewController.swift; sourceTree = "<group>"; };
 		2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTripViewController.swift; sourceTree = "<group>"; };
-		D98F5A64227C9151007C24C5 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		D98F5A64227C9151007C24C5 /* PickCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCityViewController.swift; sourceTree = "<group>"; };
 		D98F5A66227C9226007C24C5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D98F5A6A227C95AA007C24C5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCityViewController.swift; sourceTree = "<group>"; };
-		D99D90CB227C233000E9D173 /* addPlanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlanController.swift; sourceTree = "<group>"; };
+		D99D90CB227C233000E9D173 /* NewTripVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripVIewController.swift; sourceTree = "<group>"; };
 		D9B5A6F1227DE06F0076929D /* ListDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDestination.swift; sourceTree = "<group>"; };
 		D9B5A6F3227DE08E0076929D /* ListDestinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDestinationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,8 +110,8 @@
 				261F49B0227AD2FF0050C89B /* ViewController.swift */,
 				D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */,
 				0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */,
-				D99D90CB227C233000E9D173 /* addPlanController.swift */,
-				D98F5A64227C9151007C24C5 /* CityViewController.swift */,
+				D99D90CB227C233000E9D173 /* NewTripVIewController.swift */,
+				D98F5A64227C9151007C24C5 /* PickCityViewController.swift */,
 				D98F5A6A227C95AA007C24C5 /* CityCell.swift */,
 				D98F5A66227C9226007C24C5 /* Image.swift */,
 				2673C8F7227DD1F00015D61D /* RecommendationCell.swift */,
@@ -233,10 +233,10 @@
 				0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */,
 				261F49B7227AD2FF0050C89B /* CoPath.xcdatamodeld in Sources */,
 				2673C8F6227DC7560015D61D /* NotificationViewController.swift in Sources */,
-				D99D90CC227C233000E9D173 /* addPlanController.swift in Sources */,
+				D99D90CC227C233000E9D173 /* NewTripVIewController.swift in Sources */,
 				261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */,
 				2673C8F8227DD1F00015D61D /* RecommendationCell.swift in Sources */,
-				D98F5A65227C9151007C24C5 /* CityViewController.swift in Sources */,
+				D98F5A65227C9151007C24C5 /* PickCityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class addPlanController: UIViewController {
+class NewTripViewController: UIViewController {
 
     @IBOutlet weak var startField: UITextField!
     
@@ -21,12 +21,12 @@ class addPlanController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
         datePicker.datePickerMode = .date
-        datePicker.addTarget(self, action: #selector(addPlanController.dateChanged(datePicker:)), for: .valueChanged)
+        datePicker.addTarget(self, action: #selector(NewTripViewController.dateChanged(datePicker:)), for: .valueChanged)
         endPicker.datePickerMode = .date
-        endPicker.addTarget(self, action: #selector(addPlanController.endDateChanged(endPicker:)), for: .valueChanged)
+        endPicker.addTarget(self, action: #selector(NewTripViewController.endDateChanged(endPicker:)), for: .valueChanged)
         //startField.inputView = datePicker
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(addPlanController.viewTapped(gestureRecognize:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(NewTripViewController.viewTapped(gestureRecognize:)))
         
         view.addGestureRecognizer(tapGesture)
         startField.inputView = datePicker
@@ -51,16 +51,5 @@ class addPlanController: UIViewController {
         endField.text = dateFormatter.string(from: endPicker.date)
         view.endEditing(true)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

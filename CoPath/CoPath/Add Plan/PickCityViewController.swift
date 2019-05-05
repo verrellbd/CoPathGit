@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CityViewController: UIViewController {
+class PickCityViewController: UIViewController {
    
     @IBOutlet weak var tableView: UITableView!
     var images : [Image] = []
@@ -35,15 +35,6 @@ class CityViewController: UIViewController {
         navigationItem.title = "Pick a City"
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "CityToDetail" {
             let destVC = segue.destination as! DetailCityViewController
@@ -52,7 +43,7 @@ class CityViewController: UIViewController {
     }
 }
 
-extension CityViewController: UITableViewDelegate, UITableViewDataSource {
+extension PickCityViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return images.count
     }
