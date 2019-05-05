@@ -474,7 +474,7 @@
         <!--New Trip-->
         <scene sceneID="4QP-Sn-0fg">
             <objects>
-                <viewController id="n2F-aY-Ra3" customClass="addPlanController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="n2F-aY-Ra3" customClass="addPlanController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ni9-yW-JBZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,8 +505,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PLAN NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SF-eL-qRV">
                                 <rect key="frame" x="111" y="166" width="192" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96269541979999995" green="0.88640975950000001" blue="0.87841582299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="backgroundColor" red="0.99865299463272095" green="0.91772943735122681" blue="0.90979695320129395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -586,13 +586,13 @@
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wxd-Oy-D1M">
-                                <rect key="frame" x="55" y="414" width="298" height="29"/>
+                                <rect key="frame" x="20" y="414" width="374" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Fastest Route"/>
-                                    <segment title="Foods Along the Way"/>
-                                    <segment title="Family Friendly Route"/>
-                                    <segment title="Customized Route"/>
+                                    <segment title="Foods Fest"/>
+                                    <segment title="Family Trip"/>
+                                    <segment title="Customized"/>
                                 </segments>
                                 <connections>
                                     <action selector="routeChanged:" destination="I15-qU-REh" eventType="valueChanged" id="QMm-WQ-wSI"/>
@@ -606,8 +606,7 @@
                     <navigationItem key="navigationItem" title="Fun Trip 01" id="nve-g9-We4">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ltS-lT-rmc">
                             <connections>
-                                <action selector="SaveTapped:" destination="I15-qU-REh" id="Hpc-is-Hcq"/>
-                                <segue destination="uRC-T9-TCC" kind="show" id="6LK-CS-sQx"/>
+                                <action selector="saveTapped:" destination="I15-qU-REh" id="wVr-aC-C7h"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -810,6 +809,7 @@
                     <navigationItem key="navigationItem" title="Pick a City" id="mvI-gu-wMk">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="7op-Ue-hC1">
                             <connections>
+                                <action selector="saveTapped:" destination="GTy-fA-jIr" id="Qnc-fp-mwI"/>
                                 <segue destination="bEM-xJ-N8o" kind="show" id="eoY-ud-dGH"/>
                             </connections>
                         </barButtonItem>
@@ -820,6 +820,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPG-MM-uNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GTy-fA-jIr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3501" y="-581"/>
         </scene>
@@ -977,7 +978,4 @@
         <image name="profileImageProfile" width="371" height="371"/>
         <image name="profileLogo" width="25" height="24"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="6LK-CS-sQx"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -15,10 +15,13 @@ class SaveTripViewController: UIViewController {
     var Lists3 : [ListDestination] = []
     var Lists4 : [ListDestination] = []
     
-    @IBOutlet weak var listTable: UITableView!
-    @IBAction func SaveTapped(_ sender: UIBarButtonItem) {
-        
+    
+    @IBAction func saveTapped(_ sender: UIBarButtonItem) {
+        navigationController?.popToRootViewController(animated: false)
     }
+    
+    @IBOutlet weak var listTable: UITableView!
+    
     @IBOutlet weak var routeSeg: UISegmentedControl!
     
     @IBAction func routeChanged(_ sender: UISegmentedControl) {

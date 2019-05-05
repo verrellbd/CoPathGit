@@ -16,12 +16,8 @@ class ViewController: UIViewController {
     
     //action when "new trip" button tapped
     @IBAction func newTripTap(_ sender: UIButton) {
-        self.tabBarController?.tabBar.isHidden = true
         navigationController?.navigationBar.isHidden = false
     }
-    
-    //dah estinya
-    //bentar gua coba
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +35,8 @@ class ViewController: UIViewController {
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
-    //when back to "add plan" page hide navbar and show tab bar
+    //when back to "add plan" page hide navbar
     override func viewWillAppear(_ animated: Bool) {
-        self.tabBarController?.tabBar.isHidden = false
         navigationController?.navigationBar.isHidden = true
     }
     
