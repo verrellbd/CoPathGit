@@ -10,6 +10,7 @@ import UIKit
 
 class NotificationViewController: UIViewController {
 
+    var index : Int = 0
     var notif : [String] = ["test1","test2","test3","test4","test5"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,11 @@ class NotificationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! NotifDetail
+        destVC.index = index
+    }
 
 }
 
@@ -47,5 +53,16 @@ extension NotificationViewController : UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        index = indexPath.row
+        performSegue(withIdentifier: "NotifToDetail", sender: notif)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            notif.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
     
 }
