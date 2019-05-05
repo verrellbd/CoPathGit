@@ -35,12 +35,12 @@ class PickCityViewController: UIViewController {
         navigationItem.title = "Pick a City"
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "CityToDetail" {
-            let destVC = segue.destination as! DetailCityViewController
-            destVC.image = sender as? Image
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "CityToDetail" {
+//            let destVC = segue.destination as! DetailCityViewController
+//            destVC.image = sender as? Image
+//        }
+//    }
 }
 
 extension PickCityViewController: UITableViewDelegate, UITableViewDataSource {
@@ -60,9 +60,9 @@ extension PickCityViewController: UITableViewDelegate, UITableViewDataSource {
         return 300.0
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let image = images[indexPath.row]
-        performSegue(withIdentifier: "CityToDetail", sender: image)
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let image = images[indexPath.row]
+//        performSegue(withIdentifier: "CityToDetail", sender: image)
+//    }
     
 }
