@@ -13,7 +13,6 @@ class NotificationViewController: UIViewController {
     var notif : [String] = ["test1","test2","test3","test4","test5"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -36,7 +35,16 @@ extension NotificationViewController : UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NotifCell", for: indexPath)
+        cell.textLabel?.text = notif[indexPath.row]
+        if indexPath.row == 0 {
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
+        } else if indexPath.row == 2 {
+             cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
+        } else if indexPath.row == 3 {
+             cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
+        }
+        return cell
     }
     
     
