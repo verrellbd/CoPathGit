@@ -24,6 +24,7 @@
 		2673C8FC227DDADF0015D61D /* SaveTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */; };
 		26CD2223227EF4970024C18F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CD2222227EF4970024C18F /* MapKit.framework */; };
 		26CD2225227EF49F0024C18F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CD2224227EF49F0024C18F /* CoreLocation.framework */; };
+		D930A640227F23B00053B782 /* NotifDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930A63F227F23B00053B782 /* NotifDetail.swift */; };
 		D98F5A65227C9151007C24C5 /* PickCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A64227C9151007C24C5 /* PickCityViewController.swift */; };
 		D98F5A67227C9226007C24C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A66227C9226007C24C5 /* Image.swift */; };
 		D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6A227C95AA007C24C5 /* CityCell.swift */; };
@@ -53,6 +54,7 @@
 		2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTripViewController.swift; sourceTree = "<group>"; };
 		26CD2222227EF4970024C18F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		26CD2224227EF49F0024C18F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D930A63F227F23B00053B782 /* NotifDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifDetail.swift; sourceTree = "<group>"; };
 		D98F5A64227C9151007C24C5 /* PickCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCityViewController.swift; sourceTree = "<group>"; };
 		D98F5A66227C9226007C24C5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D98F5A6A227C95AA007C24C5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				2673C8F5227DC7560015D61D /* NotificationViewController.swift */,
+				D930A63F227F23B00053B782 /* NotifDetail.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */,
 				2673C8F4227DC6F80015D61D /* ProfileViewController.swift in Sources */,
 				D9B5A6F2227DE06F0076929D /* ListDestination.swift in Sources */,
+				D930A640227F23B00053B782 /* NotifDetail.swift in Sources */,
 				2673C8EC227CB6540015D61D /* PlaceRecommendationCell.swift in Sources */,
 				D9B5A6F4227DE08E0076929D /* ListDestinationCell.swift in Sources */,
 				0D7CC48B227D2EF600962C5F /* HistoryViewController.swift in Sources */,
