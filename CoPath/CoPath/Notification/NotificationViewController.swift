@@ -10,6 +10,7 @@ import UIKit
 
 class NotificationViewController: UIViewController {
 
+    var notif : [String] = ["test1","test2","test3","test4","test5"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +28,16 @@ class NotificationViewController: UIViewController {
     }
     */
 
+}
+
+extension NotificationViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return notif.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }
