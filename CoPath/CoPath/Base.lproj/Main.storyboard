@@ -141,6 +141,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="j8a-2b-dVE" id="DWj-gh-T2k"/>
+                                    <outlet property="delegate" destination="j8a-2b-dVE" id="0iN-al-oX1"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
