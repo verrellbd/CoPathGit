@@ -74,7 +74,7 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate {
                 let cordinate:CLLocationCoordinate2D =  CLLocationCoordinate2DMake(latitude, longtitude)
                 let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
                 let region = MKCoordinateRegion(center: cordinate, span: span)
-                
+                //print(annotaion.coordinate)
                 self.destinatioMap.setRegion(region, animated: true)
             }
         }
@@ -83,6 +83,10 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate {
     
 }
 
+//tabanan : CLLocationCoordinate2D(latitude: -8.440359236767822, longitude: 115.06630246527493)
+//ubud : CLLocationCoordinate2D(latitude: -8.517022900977185, longitude: 115.25612998288125)
+//sanur : CLLocationCoordinate2D(latitude: -8.690784625592844, longitude: 115.26044456753885)
+//kuta :CLLocationCoordinate2D(latitude: -8.725498511888688, longitude: 115.16205694992101)
 
 extension AddDestinationViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
