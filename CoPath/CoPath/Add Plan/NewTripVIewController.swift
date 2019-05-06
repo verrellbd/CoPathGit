@@ -34,6 +34,21 @@ class NewTripViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if self.isMovingFromParent {
+            var discardAlert = UIAlertController(title: "Discard Changes", message: "Are you sure want to leave? All changes will be lost.", preferredStyle: UIAlertController.Style.alert)
+            
+            discardAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {(action: UIAlertAction!) in
+                print("Handle Cancel logic here")
+            }))
+            
+            discardAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction!) in
+                print("Handle Ok logic here")
+            }))
+        }
+    }
+    
     @objc func viewTapped(gestureRecognize : UITapGestureRecognizer) {
         view.endEditing(true)
     }
