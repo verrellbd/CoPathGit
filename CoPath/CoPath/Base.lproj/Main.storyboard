@@ -117,7 +117,7 @@
         <!--Fun Trip 01-->
         <scene sceneID="DkT-bm-VEw">
             <objects>
-                <viewController title="Fun Trip 01" id="ywN-Pi-dB1" sceneMemberID="viewController">
+                <viewController title="Fun Trip 01" id="ywN-Pi-dB1" customClass="PlanDetailViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V8F-0i-KZs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,6 +146,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ywN-Pi-dB1" id="fbt-fO-buz"/>
+                                    <outlet property="delegate" destination="ywN-Pi-dB1" id="qqX-Eu-A5Z"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
