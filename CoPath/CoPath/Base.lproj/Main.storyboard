@@ -56,6 +56,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="On Going Plans" id="WpX-x5-act">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="historyLogo" id="4p6-ED-B32">
+                            <color key="tintColor" red="1" green="0.46095070760000001" blue="0.32895039380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="xGm-f8-KgV" kind="show" id="ffS-mz-eui"/>
                             </connections>
@@ -75,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VZr-el-yNZ">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="79" id="gUO-Kj-vfP">
@@ -970,6 +971,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.92316615580000005" green="0.52691406009999997" blue="0.4627229571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="1" green="0.46095070760000001" blue="0.32895039380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="uRC-T9-TCC" kind="relationship" relationship="viewControllers" id="hNz-vD-Rkf"/>
