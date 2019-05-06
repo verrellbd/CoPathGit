@@ -32,8 +32,31 @@ class NewTripViewController: UIViewController {
         startField.inputView = datePicker
         endField.inputView = endPicker
         // Do any additional setup after loading the view.
+        
+        // ALERT
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(back(sender:)))
+        self.navigationItem.leftBarButtonItem = newBackButton
     }
     
+    @objc func back(sender: UIBarButtonItem) {
+        // Perform your custom actions
+        let discardAlert = UIAlertController(title: "Discard Changes", message: "Are you sure want to leave? All changes will be lost.", preferredStyle: UIAlertController.Style.alert)
+        
+        discardAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {(action: UIAlertAction!) in
+            print("Handle Cancel logic here")
+        }))
+        
+        discardAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction!) in
+            print("Handle Ok logic here")
+            self.navigationController?.popViewController(animated: true)
+        }))
+        
+        self.present(discardAlert, animated: true, completion: nil)
+        // Go back to the previous ViewController
+      //  self.navigationController?.popViewController(animated: true)
+    }
+ /*
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if self.isMovingFromParent {
@@ -50,6 +73,8 @@ class NewTripViewController: UIViewController {
             }))
         }
     }
+  */
+    
     
     @objc func viewTapped(gestureRecognize : UITapGestureRecognizer) {
         view.endEditing(true)
