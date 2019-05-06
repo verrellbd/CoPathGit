@@ -204,9 +204,15 @@
                         <viewLayoutGuide key="safeArea" id="ZYy-B4-YA6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Notification" id="xRj-6n-V7Q">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="27V-vh-qZ7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="27V-vh-qZ7">
+                            <connections>
+                                <action selector="deleteAll:" destination="j8a-2b-dVE" id="ZpQ-D5-A9D"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="del" destination="27V-vh-qZ7" id="ko1-yO-Y4x"/>
+                        <outlet property="notifTable" destination="wdE-Ky-lD0" id="HOF-Ad-YEN"/>
                         <segue destination="7Hq-D6-Gec" kind="show" identifier="NotifToDetail" id="vLE-WU-fOh"/>
                     </connections>
                 </viewController>

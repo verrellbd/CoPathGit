@@ -9,11 +9,30 @@
 import UIKit
 
 class NotificationViewController: UIViewController {
-
+    @IBOutlet weak var notifTable: UITableView!
+    
+    @IBOutlet weak var del: UIBarButtonItem!
+    @IBAction func deleteAll(_ sender: UIBarButtonItem) {
+        let discardAlert = UIAlertController(title: "Delete All", message: "Are you sure want to delete all messages ? All changes will be lost.", preferredStyle: UIAlertController.Style.alert)
+        
+        discardAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {(action: UIAlertAction!) in
+            
+        }))
+        
+        discardAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction!) in
+            self.notif.removeAll()
+            self.notifTable.reloadData()
+            self.navigationController?.popViewController(animated: true)
+        }))
+        
+        self.present(discardAlert, animated: true, completion: nil)
+    }
     var index : Int = 0
-    var notif : [String] = ["test1","test2","test3","test4","test5"]
+    var notif : [String] = ["Have you check for update? The new version of Co-Path","Do you want to see the beautiful of the sea in mentawai","Hey Clarissa, are you ready for your trip? Make your trip more fun","Hey Clarissa, are you ready for your trip?  Make your trip more fun","HassanJr have sent you his/her plan. Check share plan "]
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let newBackButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(back(sender:)))
+//        del = newBackButton
         // Do any additional setup after loading the view.
     }
     
@@ -31,6 +50,26 @@ class NotificationViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! NotifDetail
         destVC.index = index
+    }
+    
+    @objc func back(sender: UIBarButtonItem) {
+        // Perform your custom actions
+        let discardAlert = UIAlertController(title: "Discard Changes", message: "Are you sure want to leave? All changes will be lost.", preferredStyle: UIAlertController.Style.alert)
+        
+        discardAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {(action: UIAlertAction!) in
+            print("Handle Cancel logic here")
+        }))
+        
+        discardAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction!) in
+            self.notif.removeAll()
+            self.notifTable.reloadData()
+            print("Handle Ok logic here")
+            self.navigationController?.popViewController(animated: true)
+        }))
+        
+        self.present(discardAlert, animated: true, completion: nil)
+        // Go back to the previous ViewController
+        //  self.navigationController?.popViewController(animated: true)
     }
 
 }
