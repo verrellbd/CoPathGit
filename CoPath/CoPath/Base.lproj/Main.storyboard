@@ -788,6 +788,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wbA-zn-4DB"/>
                     </view>
+                    <connections>
+                        <outlet property="destinatioMap" destination="N8I-61-UhA" id="Lqp-Ht-U1Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agt-Mh-fgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

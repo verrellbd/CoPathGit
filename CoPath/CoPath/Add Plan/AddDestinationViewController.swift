@@ -7,17 +7,82 @@
 //
 
 import UIKit
+import MapKit
 
-class AddDestinationViewController: UIViewController {
+class AddDestinationViewController: UIViewController, UISearchBarDelegate {
     
     var recommendationImages = [UIImage(named: "rec1")]
-
+    let searchController = UISearchController(searchResultsController: nil)
+   
+    @IBOutlet weak var destinatioMap: MKMapView!
+    @IBAction func searchButton(_ sender: Any) {
+        searchController.searchBar.delegate = self
+        present(searchController, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupNavbar()
         // Do any additional setup after loading the view.
     }
+    
+    func setupNavbar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.title = "Destination"
+        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        //ignoring user
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        //activity indicator
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        
+        
+        self.view.addSubview(activityIndicator)
+        
+        //hide search bar
+        searchBar.resignFirstResponder()
+        dismiss(animated: true, completion: nil)
+        
+        //create search request
+        let searchRequest = MKLocalSearch.Request()
+        searchRequest.naturalLanguageQuery = searchBar.text
+        
+        let activeSearch = MKLocalSearch(request: searchRequest)
+        activeSearch.start {(response,error) in activityIndicator.stopAnimating()
+            UIApplication.shared.endIgnoringInteractionEvents()
+            
+            if response == nil {
+                print("Error")
+            } else {
+                
+                
+                let latitude = response!.boundingRegion.center.latitude
+                let longtitude = response!.boundingRegion.center.longitude
+                let annotaion = MKPointAnnotation()
+                annotaion.title = searchBar.text
+                annotaion.coordinate = CLLocationCoordinate2DMake(latitude, longtitude)
+                self.destinatioMap.addAnnotation(annotaion)
+                
+                let cordinate:CLLocationCoordinate2D =  CLLocationCoordinate2DMake(latitude, longtitude)
+                let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+                let region = MKCoordinateRegion(center: cordinate, span: span)
+                
+                self.destinatioMap.setRegion(region, animated: true)
+            }
+        }
+    }
+    
+    
 }
+
 
 extension AddDestinationViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
