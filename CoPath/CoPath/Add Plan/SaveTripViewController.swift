@@ -169,18 +169,35 @@ class SaveTripViewController: UIViewController, MKMapViewDelegate {
     }
     
     func createList(route : Int) -> [ListDestination] {
-        let List1 = ListDestination(title: "Test1", time: "00.00-01.00")
-        let List2 = ListDestination(title: "Test2", time: "00.00-01.00")
-        let List3 = ListDestination(title: "Test3", time: "00.00-01.00")
-        let List4 = ListDestination(title: "Test4", time: "00.00-01.00")
+        let List1 = ListDestination(title: "Taman Sari", time: "00.00-01.00")
+        let List2 = ListDestination(title: "Malioboro", time: "01.00-02.00")
+        let List3 = ListDestination(title: "Taman Pintar", time: "03.00-04.00")
+        let List4 = ListDestination(title: "Candi Boroudur", time: "04.00-05.00")
+        
+        let List5 = ListDestination(title: "Taman Sari", time: "01.00-02.00")
+        let List6 = ListDestination(title: "Malioboro", time: "02.00-03.00")
+        let List7 = ListDestination(title: "Taman Pintar", time: "00.00-01.00")
+        let List8 = ListDestination(title: "Candi Boroudur", time: "03.00-04.00")
+        
+        let List9 = ListDestination(title: "Taman Sari", time: "02.00-03.00")
+        let List10 = ListDestination(title: "Malioboro", time: "03.00-04.00")
+        let List11 = ListDestination(title: "Taman Pintar", time: "01.00-02.00")
+        let List12 = ListDestination(title: "Candi Boroudur", time: "00.00-01.00")
+        
+        
+        let List13 = ListDestination(title: "Taman Sari", time: "03.00-04.00")
+        let List14 = ListDestination(title: "Malioboro", time: "00.00-01.00")
+        let List15 = ListDestination(title: "Taman Pintar", time: "02.00-03.00")
+        let List16 = ListDestination(title: "Candi Boroudur", time: "01.00-02.00")
+        
         if route == 0 {
             return [List1,List2,List3,List4]
         } else if route == 1 {
-            return [List2,List1,List3,List4]
+            return [List7,List5,List6,List8]
         } else if route == 2 {
-            return [List1,List2,List4,List3]
+            return [List12,List11,List9,List10]
         } else {
-            return [List4,List2,List3,List1]
+            return [List14,List16,List15,List13]
         }
         
     }
