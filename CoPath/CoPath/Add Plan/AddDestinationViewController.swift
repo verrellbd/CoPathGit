@@ -13,12 +13,12 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate {
     
     var recommendationImages = [UIImage(named: "rec1")]
     let searchController = UISearchController(searchResultsController: nil)
-   
+    let searchButton = UIBarButtonItem()
     @IBOutlet weak var destinatioMap: MKMapView!
-    @IBAction func searchButton(_ sender: Any) {
-        searchController.searchBar.delegate = self
-        present(searchController, animated: true, completion: nil)
-    }
+//    @IBAction func searchButton(_ sender: Any) {
+//        searchController.searchBar.delegate = self
+//        present(searchController, animated: true, completion: nil)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +29,13 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate {
     func setupNavbar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.searchController = searchController
+        searchController.searchBar.delegate = self
         navigationItem.hidesSearchBarWhenScrolling = false
-        navigationItem.title = "Destination"
-        
+//        navigationItem.title = "Destination"
     }
-    
+
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("Masuk")
         //ignoring user
         UIApplication.shared.beginIgnoringInteractionEvents()
         //activity indicator
@@ -58,11 +59,10 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate {
         let activeSearch = MKLocalSearch(request: searchRequest)
         activeSearch.start {(response,error) in activityIndicator.stopAnimating()
             UIApplication.shared.endIgnoringInteractionEvents()
-            
             if response == nil {
                 print("Error")
             } else {
-                
+            
                 
                 let latitude = response!.boundingRegion.center.latitude
                 let longtitude = response!.boundingRegion.center.longitude
