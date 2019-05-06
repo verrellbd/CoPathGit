@@ -140,7 +140,7 @@ class SaveTripViewController: UIViewController, MKMapViewDelegate {
             let rect = route.polyline.boundingMapRect
             self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
         }
-        self.mapView.delegate = self as! MKMapViewDelegate
+        self.mapView.delegate = self 
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
