@@ -653,7 +653,6 @@
                                 </segments>
                                 <connections>
                                     <action selector="routeChanged:" destination="I15-qU-REh" eventType="valueChanged" id="QMm-WQ-wSI"/>
-                                    <action selector="routeSeg:" destination="I15-qU-REh" eventType="valueChanged" id="zk0-N4-UQl"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>

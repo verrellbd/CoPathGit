@@ -26,7 +26,6 @@ class SaveTripViewController: UIViewController {
     
     @IBAction func routeChanged(_ sender: UISegmentedControl) {
         self.listTable.reloadData()
-        print("Masuk")
     }
     
     override func viewDidLoad() {
