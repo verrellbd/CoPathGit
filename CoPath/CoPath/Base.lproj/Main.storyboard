@@ -660,6 +660,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="listTable" destination="xhr-FL-uU7" id="tfH-0b-2NQ"/>
+                        <outlet property="mapView" destination="5CK-HR-oZj" id="inL-cU-ETv"/>
                         <outlet property="routeSeg" destination="wxd-Oy-D1M" id="fmH-f0-G0R"/>
                     </connections>
                 </viewController>
