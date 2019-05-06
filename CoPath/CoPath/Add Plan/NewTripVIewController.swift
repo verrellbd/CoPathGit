@@ -45,6 +45,8 @@ class NewTripViewController: UIViewController {
             
             discardAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction!) in
                 print("Handle Ok logic here")
+                self.navigationController?.popViewController(animated: true)
+                self.navigationController?.popToRootViewController(animated: true)
             }))
         }
     }
