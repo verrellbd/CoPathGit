@@ -703,7 +703,7 @@
             </objects>
             <point key="canvasLocation" x="3500" y="-1290"/>
         </scene>
-        <!--Add Destination View Controller-->
+        <!--Destination-->
         <scene sceneID="Baz-Sn-kdf">
             <objects>
                 <viewController id="bEM-xJ-N8o" customClass="AddDestinationViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
@@ -788,6 +788,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wbA-zn-4DB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Destination" id="dg4-ga-wai"/>
                     <connections>
                         <outlet property="destinatioMap" destination="N8I-61-UhA" id="Lqp-Ht-U1Q"/>
                     </connections>
