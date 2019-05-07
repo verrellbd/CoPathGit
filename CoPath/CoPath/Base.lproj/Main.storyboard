@@ -165,6 +165,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M9a-EB-V9X"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="B29-qI-gT8">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="action" id="noh-ep-j1G"/>
+                            <barButtonItem title="Edit" id="AUx-ey-Lys"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVe-cq-Jx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,9 +208,15 @@
                         <viewLayoutGuide key="safeArea" id="ZYy-B4-YA6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Notification" id="xRj-6n-V7Q">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="27V-vh-qZ7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="27V-vh-qZ7">
+                            <connections>
+                                <action selector="deleteAll:" destination="j8a-2b-dVE" id="ZpQ-D5-A9D"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="del" destination="27V-vh-qZ7" id="ko1-yO-Y4x"/>
+                        <outlet property="notifTable" destination="wdE-Ky-lD0" id="HOF-Ad-YEN"/>
                         <segue destination="7Hq-D6-Gec" kind="show" identifier="NotifToDetail" id="vLE-WU-fOh"/>
                     </connections>
                 </viewController>
@@ -386,7 +398,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Messages Image(261726984) copy" translatesAutoresizingMaskIntoConstraints="NO" id="fFy-fi-upJ">
-                                        <rect key="frame" x="77" y="140" width="268" height="165"/>
+                                        <rect key="frame" x="71" y="174" width="268" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -410,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgU-p0-Mu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2938" y="1478"/>
+            <point key="canvasLocation" x="5397" y="84"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="5Ym-Xe-tKB">
@@ -464,7 +476,7 @@
                                         <state key="normal" title="Don't have an account"/>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Messages Image(261726984) copy" translatesAutoresizingMaskIntoConstraints="NO" id="751-py-wd8">
-                                        <rect key="frame" x="72" y="150" width="268" height="165"/>
+                                        <rect key="frame" x="71" y="174" width="268" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -486,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isT-3y-uVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4374" y="1478"/>
+            <point key="canvasLocation" x="4526" y="84"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gk9-vT-6bQ">
@@ -1043,50 +1055,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkp-Dt-wfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-409" y="574"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="lyb-Wt-1ts">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zOw-xk-LnB" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eEh-Xe-LBo">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
-                            <color key="textColor" red="1" green="0.46095070760000001" blue="0.32895039380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="B0A-PW-cOS" kind="relationship" relationship="rootViewController" id="KgP-Ls-5rF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vr5-gu-lsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3658" y="1478"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hgj-Sm-YFf">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w0n-TC-0Cc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1BH-gx-hs6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
-                            <color key="textColor" red="1" green="0.46095070760000001" blue="0.32895039380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="RtJ-Lu-DIH" kind="relationship" relationship="rootViewController" id="QEN-Ni-43c"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kmb-gA-vU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2206" y="1478"/>
         </scene>
         <!--Notification-->
         <scene sceneID="Agd-lq-eqv">
