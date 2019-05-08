@@ -398,8 +398,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Messages Image(261726984) copy" translatesAutoresizingMaskIntoConstraints="NO" id="fFy-fi-upJ">
-                                        <rect key="frame" x="71" y="174" width="268" height="165"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIconSignInUp" translatesAutoresizingMaskIntoConstraints="NO" id="fFy-fi-upJ">
+                                        <rect key="frame" x="71" y="148" width="268" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -476,7 +476,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Don't have an account"/>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Messages Image(261726984) copy" translatesAutoresizingMaskIntoConstraints="NO" id="751-py-wd8">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIconSignInUp" translatesAutoresizingMaskIntoConstraints="NO" id="751-py-wd8">
                                         <rect key="frame" x="71" y="174" width="268" height="165"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -565,7 +565,7 @@
                                     <outlet property="delegate" destination="YgX-FU-7LH" id="qZ9-U9-MCt"/>
                                 </connections>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Messages Image(261726984) copy" translatesAutoresizingMaskIntoConstraints="NO" id="EKT-NP-T4T">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIconHome" translatesAutoresizingMaskIntoConstraints="NO" id="EKT-NP-T4T">
                                 <rect key="frame" x="20" y="112" width="66" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1113,8 +1113,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Messages Image(261726984) copy" width="74" height="74"/>
         <image name="addPlanEnabled" width="24" height="24"/>
+        <image name="appIconHome" width="52" height="52"/>
+        <image name="appIconSignInUp" width="105" height="105"/>
         <image name="editProfilePic" width="50" height="50"/>
         <image name="headerPicPlacesOnlyWeKnow" width="414" height="233"/>
         <image name="historyLogo" width="25" height="25"/>
