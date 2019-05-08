@@ -48,7 +48,7 @@ class NotificationViewController: UIViewController {
     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destVC = segue.destination as! NotifDetail
+        let destVC = segue.destination as! NotifDetailViewController
         destVC.index = index
     }
     

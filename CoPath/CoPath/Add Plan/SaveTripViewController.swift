@@ -22,12 +22,7 @@ class customPin: NSObject, MKAnnotation {
 }
 
 class SaveTripViewController: UIViewController, MKMapViewDelegate {
-    
-    var Lists1 : [ListDestination] = []
-    var Lists2 : [ListDestination] = []
-    var Lists3 : [ListDestination] = []
-    var Lists4 : [ListDestination] = []
-    
+    var destination : [ListDestination] = []
     
     @IBOutlet weak var mapView: MKMapView!
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
@@ -46,10 +41,6 @@ class SaveTripViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         self.listTable.delegate = self
         self.listTable.dataSource = self
-        Lists1 = createList(route : 0)
-        Lists2 = createList(route : 1)
-        Lists3 = createList(route : 2)
-        Lists4 = createList(route : 3)
         // Do any additional setup after loading the view.
         
         // ALERT
@@ -253,33 +244,36 @@ class SaveTripViewController: UIViewController, MKMapViewDelegate {
 
 extension SaveTripViewController:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Lists1.count
+        return destination.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellList = listTable.dequeueReusableCell(withIdentifier: "ListCell") as! ListDestinationCell
-        switch (routeSeg.selectedSegmentIndex) {
-        case 0:
-            let list1 = Lists1[indexPath.row]
-            cellList.setList(label: list1)
-            break
-        case 1:
-           // print("Masuk")
-            let list2 = Lists2[indexPath.row]
-            cellList.setList(label: list2)
-            break
-        case 2:
-            let list3 = Lists3[indexPath.row]
-            cellList.setList(label: list3)
-            break
-        case 3:
-            let list4 = Lists4[indexPath.row]
-            cellList.setList(label: list4)
-            break
-        default:
-            break
-        }
+        cellList.setList(label: destination[indexPath.row].title)
         return cellList
+//        let cellList = listTable.dequeueReusableCell(withIdentifier: "ListCell") as! ListDestinationCell
+//        switch (routeSeg.selectedSegmentIndex) {
+//        case 0:
+//            let list1 = Lists1[indexPath.row]
+//            cellList.setList(label: list1)
+//            break
+//        case 1:
+//           // print("Masuk")
+//            let list2 = Lists2[indexPath.row]
+//            cellList.setList(label: list2)
+//            break
+//        case 2:
+//            let list3 = Lists3[indexPath.row]
+//            cellList.setList(label: list3)
+//            break
+//        case 3:
+//            let list4 = Lists4[indexPath.row]
+//            cellList.setList(label: list4)
+//            break
+//        default:
+//            break
+//        }
+//        return cellList
         
     }
     

@@ -15,7 +15,7 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate, MKMap
     let searchController = UISearchController(searchResultsController: nil)
     let searchButton = UIBarButtonItem()
     @IBOutlet weak var destinatioMap: MKMapView!
-    
+    var tempat: [ListDestination] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavbar()
@@ -137,7 +137,7 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate, MKMap
                 let model = CoordinateModel()
                 model.latitude = annotaion.coordinate.latitude
                 model.longitude = annotaion.coordinate.longitude
-                
+                self.tempat.append(ListDestination(title: annotaion.title!, time: "00.00-01.00"))
                 LocationModel.location.append(model)
                 
                 print("array value: \(LocationModel.location.count)")
@@ -150,6 +150,11 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate, MKMap
                 self.destinatioMap.setRegion(region, animated: true)
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination as? SaveTripViewController
+        dest?.destination = self.tempat
     }
 }
 
