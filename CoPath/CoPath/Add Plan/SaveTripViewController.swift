@@ -253,11 +253,11 @@ extension SaveTripViewController:UITableViewDelegate,UITableViewDataSource {
         
         switch (routeSeg.selectedSegmentIndex) {
         case 0,2:
-            cellList.setList(label: destination[indexPath.row].title)
+            cellList.setList(label: destination[indexPath.row].title, time: "00.00-01.00")
         case 1,3:
             for idx in (0...destination.count-1).reversed() {
                 //print(idx)
-                cellList.setList(label: destination[idx].title)
+                cellList.setList(label: destination[idx].title, time: "00.00-01.00" )
             }
         default:
             break

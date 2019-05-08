@@ -25,9 +25,9 @@ class ListDestinationCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setList(label: String) {
+    func setList(label: String, time : String) {
         titleList.text = label
-//        timeList.text = label.time
+       timeList.text = time
      }
 
 
