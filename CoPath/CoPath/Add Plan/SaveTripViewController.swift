@@ -132,12 +132,8 @@ class SaveTripViewController: UIViewController, MKMapViewDelegate {
 //            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
 //        }
         for idx in 0..<LocationModel.location.count {
-            //let annotaion = MKPointAnnotation()
-            //print(LocationModel.location[idx])
             let annotation = CLLocationCoordinate2DMake(LocationModel.location[idx].latitude!, LocationModel.location[idx].longitude!)
             let pin = customPin(pinTitle: destination[idx].title, pinSubTitle: "", location: annotation)
-           // annotaion.coordinate.latitude = LocationModel.location[idx].latitude!
-            //annotaion.coordinate.longitude = LocationModel.location[idx].longitude!
             self.mapView.addAnnotation(pin)
         }
         
@@ -254,7 +250,18 @@ extension SaveTripViewController:UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellList = listTable.dequeueReusableCell(withIdentifier: "ListCell") as! ListDestinationCell
-        cellList.setList(label: destination[indexPath.row].title)
+        
+        switch (routeSeg.selectedSegmentIndex) {
+        case 0,2:
+            cellList.setList(label: destination[indexPath.row].title)
+        case 1,3:
+            for idx in (0...destination.count-1).reversed() {
+                //print(idx)
+                cellList.setList(label: destination[idx].title)
+            }
+        default:
+            break
+        }
         return cellList
 //        let cellList = listTable.dequeueReusableCell(withIdentifier: "ListCell") as! ListDestinationCell
 //        switch (routeSeg.selectedSegmentIndex) {
