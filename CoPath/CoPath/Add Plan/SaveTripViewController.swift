@@ -132,11 +132,13 @@ class SaveTripViewController: UIViewController, MKMapViewDelegate {
 //            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
 //        }
         for idx in 0..<LocationModel.location.count {
-            let annotaion = MKPointAnnotation()
+            //let annotaion = MKPointAnnotation()
             //print(LocationModel.location[idx])
-            annotaion.coordinate.latitude = LocationModel.location[idx].latitude!
-            annotaion.coordinate.longitude = LocationModel.location[idx].longitude!
-            self.mapView.addAnnotation(annotaion)
+            let annotation = CLLocationCoordinate2DMake(LocationModel.location[idx].latitude!, LocationModel.location[idx].longitude!)
+            let pin = customPin(pinTitle: destination[idx].title, pinSubTitle: "", location: annotation)
+           // annotaion.coordinate.latitude = LocationModel.location[idx].latitude!
+            //annotaion.coordinate.longitude = LocationModel.location[idx].longitude!
+            self.mapView.addAnnotation(pin)
         }
         
         if LocationModel.location.count != 0 {
