@@ -9,16 +9,12 @@
 import UIKit
 import MapKit
 
-class AddDestinationViewController: UIViewController, UISearchBarDelegate {
+class AddDestinationViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegate {
     
-    var recommendationImages = [UIImage(named: "rec1")]
+    var recommendationImages = [UIImage(named: "jogja01"),UIImage(named: "jogja02"),UIImage(named: "jogja03"),UIImage(named: "jogja04")]
     let searchController = UISearchController(searchResultsController: nil)
     let searchButton = UIBarButtonItem()
     @IBOutlet weak var destinatioMap: MKMapView!
-//    @IBAction func searchButton(_ sender: Any) {
-//        searchController.searchBar.delegate = self
-//        present(searchController, animated: true, completion: nil)
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +55,50 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate {
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("Masuk")
+//        print("Masuk")
+//        //ignoring user
+//        UIApplication.shared.beginIgnoringInteractionEvents()
+//        //activity indicator
+//        let activityIndicator = UIActivityIndicatorView()
+//        activityIndicator.style = UIActivityIndicatorView.Style.gray
+//        activityIndicator.center = self.view.center
+//        activityIndicator.hidesWhenStopped = true
+//        activityIndicator.startAnimating()
+//
+//
+//        self.view.addSubview(activityIndicator)
+//
+//        //hide search bar
+//        searchBar.resignFirstResponder()
+//        dismiss(animated: true, completion: nil)
+//
+//        //create search request
+//        let searchRequest = MKLocalSearch.Request()
+//        searchRequest.naturalLanguageQuery = searchBar.text
+//
+//        let activeSearch = MKLocalSearch(request: searchRequest)
+//        activeSearch.start {(response,error) in activityIndicator.stopAnimating()
+//            UIApplication.shared.endIgnoringInteractionEvents()
+//            if response == nil {
+//                print("Error")
+//            } else {
+//
+//
+//                let latitude = response!.boundingRegion.center.latitude
+//                let longtitude = response!.boundingRegion.center.longitude
+//                let annotaion = MKPointAnnotation()
+//                annotaion.title = searchBar.text
+//                annotaion.coordinate = CLLocationCoordinate2DMake(latitude, longtitude)
+//                self.destinatioMap.addAnnotation(annotaion)
+//
+//                let cordinate:CLLocationCoordinate2D =  CLLocationCoordinate2DMake(latitude, longtitude)
+//                let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+//                let region = MKCoordinateRegion(center: cordinate, span: span)
+//                //print(annotaion.coordinate)
+//                self.destinatioMap.setRegion(region, animated: true)
+//            }
+//        }
+        
         //ignoring user
         UIApplication.shared.beginIgnoringInteractionEvents()
         //activity indicator
@@ -81,30 +120,37 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate {
         searchRequest.naturalLanguageQuery = searchBar.text
         
         let activeSearch = MKLocalSearch(request: searchRequest)
-        activeSearch.start {(response,error) in activityIndicator.stopAnimating()
+        activeSearch.start { [unowned self] (response,error) in activityIndicator.stopAnimating()
+            
             UIApplication.shared.endIgnoringInteractionEvents()
+            
             if response == nil {
                 print("Error")
             } else {
-            
-                
                 let latitude = response!.boundingRegion.center.latitude
                 let longtitude = response!.boundingRegion.center.longitude
                 let annotaion = MKPointAnnotation()
                 annotaion.title = searchBar.text
                 annotaion.coordinate = CLLocationCoordinate2DMake(latitude, longtitude)
                 self.destinatioMap.addAnnotation(annotaion)
+                //location[click] = annotaion.coordinate
+                let model = CoordinateModel()
+                model.latitude = annotaion.coordinate.latitude
+                model.longitude = annotaion.coordinate.longitude
                 
+                LocationModel.location.append(model)
+                
+                print("array value: \(LocationModel.location.count)")
+                // self.location[self.click] = annotaion.coordinate
+                //                print(self.location.location[self.click].latitude)
                 let cordinate:CLLocationCoordinate2D =  CLLocationCoordinate2DMake(latitude, longtitude)
                 let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
                 let region = MKCoordinateRegion(center: cordinate, span: span)
-                //print(annotaion.coordinate)
+                
                 self.destinatioMap.setRegion(region, animated: true)
             }
         }
     }
-    
-    
 }
 
 //tabanan : CLLocationCoordinate2D(latitude: -8.440359236767822, longitude: 115.06630246527493)
