@@ -354,6 +354,9 @@
                                         <color key="backgroundColor" red="0.98039215686274506" green="0.50196078431372548" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="SIGN UP"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="RtJ-Lu-DIH" eventType="touchUpInside" id="Ips-uq-Vni"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONFIRM PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIy-co-UAt">
                                         <rect key="frame" x="71" y="529" width="173" height="21"/>
@@ -387,6 +390,9 @@
                                         <rect key="frame" x="127" y="709" width="169" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Already have an account"/>
+                                        <connections>
+                                            <action selector="haveAccountTapped:" destination="RtJ-Lu-DIH" eventType="touchUpInside" id="a4o-rO-nxh"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGS-Ni-hlA">
                                         <rect key="frame" x="72" y="437" width="93" height="21"/>
@@ -424,6 +430,12 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="eXC-E5-dFl">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="VP1-OR-mI6"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="confirmPassField" destination="3Eb-N9-l26" id="r5c-im-npQ"/>
+                        <outlet property="passwordField" destination="UfE-OE-kRl" id="iLg-Yi-6mx"/>
+                        <outlet property="usernameField" destination="3Cj-P0-Vgd" id="tIm-2j-TLn"/>
+                        <segue destination="B0A-PW-cOS" kind="show" identifier="goSignIn" id="o2B-vg-IMF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgU-p0-Mu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -454,11 +466,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-90-M42">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-90-M42">
                                         <rect key="frame" x="71" y="498" width="272" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ylR-aO-ohA">
@@ -474,11 +485,17 @@
                                         <color key="backgroundColor" red="0.98039215686274506" green="0.50196078431372548" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="SIGN IN"/>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="B0A-PW-cOS" eventType="touchUpInside" id="q3v-0J-Rfs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD3-4N-hJg">
                                         <rect key="frame" x="130" y="633" width="153" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Don't have an account"/>
+                                        <connections>
+                                            <action selector="noAccountTapped:" destination="B0A-PW-cOS" eventType="touchUpInside" id="Y0e-OU-Ryv"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIconSignInUp" translatesAutoresizingMaskIntoConstraints="NO" id="751-py-wd8">
                                         <rect key="frame" x="71" y="174" width="268" height="165"/>
@@ -500,6 +517,11 @@
                     <navigationItem key="navigationItem" title="Sign In" id="JT0-Se-pgb">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="3am-sq-XHH"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="passwordField" destination="vgQ-90-M42" id="JNw-4p-IAh"/>
+                        <outlet property="usernameField" destination="ylR-aO-ohA" id="I7k-fQ-Wph"/>
+                        <segue destination="RtJ-Lu-DIH" kind="show" identifier="goSignUp" id="baD-eK-kUO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isT-3y-uVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1134,4 +1156,7 @@
         <image name="profileEnabled" width="24" height="24"/>
         <image name="profileImage" width="213" height="213"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="o2B-vg-IMF"/>
+    </inferredMetricsTieBreakers>
 </document>
