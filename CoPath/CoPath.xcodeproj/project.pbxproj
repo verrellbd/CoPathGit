@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D6EC42C2280164A0062A27B /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6EC42B2280164A0062A27B /* PlanDetailViewController.swift */; };
 		0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */; };
 		0D7CC48B227D2EF600962C5F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */; };
 		0D7CC48D227D43E400962C5F /* OnGoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D6EC42B2280164A0062A27B /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
 		0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */,
 				0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */,
+				0D6EC42B2280164A0062A27B /* PlanDetailViewController.swift */,
 			);
 			path = Plans;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */,
 				2673C8FA227DD8A10015D61D /* AddDestinationViewController.swift in Sources */,
 				D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */,
+				0D6EC42C2280164A0062A27B /* PlanDetailViewController.swift in Sources */,
 				2673C8F4227DC6F80015D61D /* ProfileViewController.swift in Sources */,
 				D9B5A6F2227DE06F0076929D /* ListDestination.swift in Sources */,
 				D930A640227F23B00053B782 /* NotifDetail.swift in Sources */,
