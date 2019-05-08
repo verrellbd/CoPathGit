@@ -140,7 +140,7 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate, MKMap
                 self.tempat.append(ListDestination(title: annotaion.title!, time: "00.00-01.00"))
                 LocationModel.location.append(model)
                 
-                print("array value: \(LocationModel.location.count)")
+                // print("array value: \(LocationModel.location.count)")
                 // self.location[self.click] = annotaion.coordinate
                 //                print(self.location.location[self.click].latitude)
                 let cordinate:CLLocationCoordinate2D =  CLLocationCoordinate2DMake(latitude, longtitude)
