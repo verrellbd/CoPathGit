@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="1591" y="779"/>
         </scene>
-        <!--Notif Detail-->
+        <!--Notif Detail View Controller-->
         <scene sceneID="XDm-Ap-Gk7">
             <objects>
-                <viewController id="7Hq-D6-Gec" customClass="NotifDetail" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Hq-D6-Gec" customClass="NotifDetailViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IaM-ww-UCK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvl-qh-j2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2413" y="779"/>
+            <point key="canvasLocation" x="2525" y="779"/>
         </scene>
         <!--Profile-->
         <scene sceneID="rXa-c1-ROj">
@@ -335,12 +335,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw6-0k-wQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="681" y="1478"/>
+            <point key="canvasLocation" x="681" y="1513"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="4AF-20-lWI">
             <objects>
-                <viewController id="RtJ-Lu-DIH" customClass="ViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RtJ-Lu-DIH" customClass="SignUpViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H5M-5d-ug4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,12 +427,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgU-p0-Mu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5397" y="84"/>
+            <point key="canvasLocation" x="2525" y="1513"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="5Ym-Xe-tKB">
             <objects>
-                <viewController id="B0A-PW-cOS" customClass="ViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B0A-PW-cOS" customClass="SignInViewController" customModule="CoPath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R2T-2e-zEV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,7 +503,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isT-3y-uVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4526" y="84"/>
+            <point key="canvasLocation" x="1591" y="1513"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gk9-vT-6bQ">
