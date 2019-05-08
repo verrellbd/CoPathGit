@@ -322,7 +322,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9L5-vn-IIU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="profileLogo" id="yde-Fe-BjA"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profileEnabled" id="yde-Fe-BjA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gw6-0k-wQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1056,7 +1056,7 @@
         <scene sceneID="Agd-lq-eqv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iTf-5O-kBV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notification" image="listLogo" id="3l1-TA-Nrm"/>
+                    <tabBarItem key="tabBarItem" title="Notification" image="notifEnabled" id="3l1-TA-Nrm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="DvF-Bw-JgU">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1075,7 +1075,7 @@
         <scene sceneID="94V-oX-LBv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dr1-rK-RDd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Plans" image="historyLogo" id="dsv-Yc-Xw4"/>
+                    <tabBarItem key="tabBarItem" title="Plans" image="plansEnabled" id="dsv-Yc-Xw4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UsL-OA-YoG">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1094,7 +1094,7 @@
         <scene sceneID="4Fk-iu-DS1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uRC-T9-TCC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Add Plan" image="addLogo" id="fjj-gk-Asf"/>
+                    <tabBarItem key="tabBarItem" title="Add Plan" image="addPlanEnabled" id="fjj-gk-Asf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tle-AW-Qk3">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1112,10 +1112,11 @@
     </scenes>
     <resources>
         <image name="Messages Image(261726984) copy" width="74" height="74"/>
-        <image name="addLogo" width="25" height="25"/>
+        <image name="addPlanEnabled" width="24" height="24"/>
         <image name="historyLogo" width="25" height="25"/>
-        <image name="listLogo" width="25" height="25"/>
+        <image name="notifEnabled" width="24" height="24"/>
+        <image name="plansEnabled" width="24" height="24"/>
+        <image name="profileEnabled" width="24" height="24"/>
         <image name="profileImageProfile" width="371" height="371"/>
-        <image name="profileLogo" width="25" height="24"/>
     </resources>
 </document>
