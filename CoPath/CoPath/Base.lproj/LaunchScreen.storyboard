@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Messages Image(261726984) copy" translatesAutoresizingMaskIntoConstraints="NO" id="Ez0-E7-6ID">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIconSignInUp" translatesAutoresizingMaskIntoConstraints="NO" id="Ez0-E7-6ID">
                                 <rect key="frame" x="135" y="376" width="145" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -33,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Messages Image(261726984) copy" width="74" height="74"/>
+        <image name="appIconSignInUp" width="105" height="105"/>
     </resources>
 </document>
