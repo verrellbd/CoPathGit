@@ -56,91 +56,127 @@ class SaveTripViewController: UIViewController, MKMapViewDelegate {
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(back(sender:)))
         self.navigationItem.leftBarButtonItem = newBackButton
-        let tamanPintar = CLLocationCoordinate2D(latitude: -7.801647777910315, longitude: 110.36947967950255)
-        let malioboro = CLLocationCoordinate2D(latitude: -7.793743704349689, longitude: 110.36279812920839)
-        let borobudur = CLLocationCoordinate2D(latitude: -7.607930784579451, longitude: 110.20384518429637)
-        let tamanSari = CLLocationCoordinate2D(latitude: -7.809999443125113, longitude: 110.35902853589505)
-        
-        let tamanPintarPin = customPin(pinTitle: "Taman Pintar", pinSubTitle: "", location: tamanPintar)
-        let malioboroPin = customPin(pinTitle: "Malioboro", pinSubTitle: "", location: malioboro)
-        let borobudurPin = customPin(pinTitle: "Candi Borobudur", pinSubTitle: "", location: borobudur)
-        let tamanSariPin = customPin(pinTitle: "Taman Sari", pinSubTitle: "", location: tamanSari)
-        
-        self.mapView.addAnnotation(tamanPintarPin)
-        self.mapView.addAnnotation(malioboroPin)
-        self.mapView.addAnnotation(borobudurPin)
-        self.mapView.addAnnotation(tamanSariPin)
-        
-        let tamanPintarPlaceMark = MKPlacemark(coordinate: tamanPintar)
-        let malioboroPlaceMark = MKPlacemark(coordinate: malioboro)
-        let borobudurPlaceMark = MKPlacemark(coordinate: borobudur)
-        let tamanSariPlaceMark = MKPlacemark(coordinate: tamanSari)
-        
-        let directionRequest = MKDirections.Request()
-        directionRequest.source = MKMapItem(placemark: tamanSariPlaceMark)
-        directionRequest.destination = MKMapItem(placemark: tamanPintarPlaceMark)
-        directionRequest.transportType = .automobile
-        
-        let directionRequest1 = MKDirections.Request()
-        directionRequest1.source = MKMapItem(placemark: tamanPintarPlaceMark)
-        directionRequest1.destination = MKMapItem(placemark: malioboroPlaceMark)
-        directionRequest1.transportType = .automobile
-        
-        let directionRequest2 = MKDirections.Request()
-        directionRequest2.source = MKMapItem(placemark: malioboroPlaceMark)
-        directionRequest2.destination = MKMapItem(placemark: borobudurPlaceMark)
-        directionRequest2.transportType = .automobile
-        
-        
-        let directions = MKDirections(request: directionRequest)
-        let directions1 = MKDirections(request: directionRequest1)
-        let directions2 = MKDirections(request: directionRequest2)
-        
-        directions.calculate { (response, error) in
-            guard let directionResonse = response else {
-                if let error = error {
-                    print("we have error getting directions==\(error.localizedDescription)")
-                }
-                return
-            }
-            
-            let route = directionResonse.routes[0]
-            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
-            
-            let rect = route.polyline.boundingMapRect
-            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+//        let tamanPintar = CLLocationCoordinate2D(latitude: -7.801647777910315, longitude: 110.36947967950255)
+//        let malioboro = CLLocationCoordinate2D(latitude: -7.793743704349689, longitude: 110.36279812920839)
+//        let borobudur = CLLocationCoordinate2D(latitude: -7.607930784579451, longitude: 110.20384518429637)
+//        let tamanSari = CLLocationCoordinate2D(latitude: -7.809999443125113, longitude: 110.35902853589505)
+//
+//        let tamanPintarPin = customPin(pinTitle: "Taman Pintar", pinSubTitle: "", location: tamanPintar)
+//        let malioboroPin = customPin(pinTitle: "Malioboro", pinSubTitle: "", location: malioboro)
+//        let borobudurPin = customPin(pinTitle: "Candi Borobudur", pinSubTitle: "", location: borobudur)
+//        let tamanSariPin = customPin(pinTitle: "Taman Sari", pinSubTitle: "", location: tamanSari)
+//
+//        self.mapView.addAnnotation(tamanPintarPin)
+//        self.mapView.addAnnotation(malioboroPin)
+//        self.mapView.addAnnotation(borobudurPin)
+//        self.mapView.addAnnotation(tamanSariPin)
+//
+//        let tamanPintarPlaceMark = MKPlacemark(coordinate: tamanPintar)
+//        let malioboroPlaceMark = MKPlacemark(coordinate: malioboro)
+//        let borobudurPlaceMark = MKPlacemark(coordinate: borobudur)
+//        let tamanSariPlaceMark = MKPlacemark(coordinate: tamanSari)
+//
+//        let directionRequest = MKDirections.Request()
+//        directionRequest.source = MKMapItem(placemark: tamanSariPlaceMark)
+//        directionRequest.destination = MKMapItem(placemark: tamanPintarPlaceMark)
+//        directionRequest.transportType = .automobile
+//
+//        let directionRequest1 = MKDirections.Request()
+//        directionRequest1.source = MKMapItem(placemark: tamanPintarPlaceMark)
+//        directionRequest1.destination = MKMapItem(placemark: malioboroPlaceMark)
+//        directionRequest1.transportType = .automobile
+//
+//        let directionRequest2 = MKDirections.Request()
+//        directionRequest2.source = MKMapItem(placemark: malioboroPlaceMark)
+//        directionRequest2.destination = MKMapItem(placemark: borobudurPlaceMark)
+//        directionRequest2.transportType = .automobile
+//
+//
+//        let directions = MKDirections(request: directionRequest)
+//        let directions1 = MKDirections(request: directionRequest1)
+//        let directions2 = MKDirections(request: directionRequest2)
+//
+//        directions.calculate { (response, error) in
+//            guard let directionResonse = response else {
+//                if let error = error {
+//                    print("we have error getting directions==\(error.localizedDescription)")
+//                }
+//                return
+//            }
+//
+//            let route = directionResonse.routes[0]
+//            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+//
+//            let rect = route.polyline.boundingMapRect
+//            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+//        }
+//
+//        directions1.calculate { (response, error) in
+//            guard let directionResonse = response else {
+//                if let error = error {
+//                    print("we have error getting directions==\(error.localizedDescription)")
+//                }
+//                return
+//            }
+//
+//            let route = directionResonse.routes[0]
+//            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+//
+//            let rect = route.polyline.boundingMapRect
+//            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+//        }
+//
+//        directions2.calculate { (response, error) in
+//            guard let directionResonse = response else {
+//                if let error = error {
+//                    print("we have error getting directions==\(error.localizedDescription)")
+//                }
+//                return
+//            }
+//
+//            let route = directionResonse.routes[0]
+//            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+//
+//            let rect = route.polyline.boundingMapRect
+//            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+//        }
+        for idx in 0..<LocationModel.location.count {
+            let annotaion = MKPointAnnotation()
+            //print(LocationModel.location[idx])
+            annotaion.coordinate.latitude = LocationModel.location[idx].latitude!
+            annotaion.coordinate.longitude = LocationModel.location[idx].longitude!
+            self.mapView.addAnnotation(annotaion)
         }
         
-        directions1.calculate { (response, error) in
-            guard let directionResonse = response else {
-                if let error = error {
-                    print("we have error getting directions==\(error.localizedDescription)")
+        for idx in 0..<LocationModel.location.count-1 {
+            
+            let sourceCoord = CLLocationCoordinate2DMake(LocationModel.location[idx].latitude!, LocationModel.location[idx].longitude!)
+            
+            let destCoord = CLLocationCoordinate2DMake(LocationModel.location[idx+1].latitude!, LocationModel.location[idx+1].longitude!)
+            
+            let source = MKPlacemark(coordinate: sourceCoord)
+            let dest = MKPlacemark(coordinate: destCoord)
+            let directionRequest = MKDirections.Request()
+            directionRequest.source = MKMapItem(placemark: source)
+            directionRequest.destination = MKMapItem(placemark: dest)
+            directionRequest.transportType = .automobile
+            let directions = MKDirections(request: directionRequest)
+            directions.calculate { (response, error) in
+                guard let directionResonse = response else {
+                    if let error = error {
+                        print("we have error getting directions==\(error.localizedDescription)")
+                    }
+                    return
                 }
-                return
+                let route = directionResonse.routes[0]
+                self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+                
+                let rect = route.polyline.boundingMapRect
+                self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
             }
-            
-            let route = directionResonse.routes[0]
-            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
-            
-            let rect = route.polyline.boundingMapRect
-            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+            // Do any additional setup after loading the view.
         }
-        
-        directions2.calculate { (response, error) in
-            guard let directionResonse = response else {
-                if let error = error {
-                    print("we have error getting directions==\(error.localizedDescription)")
-                }
-                return
-            }
-            
-            let route = directionResonse.routes[0]
-            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
-            
-            let rect = route.polyline.boundingMapRect
-            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
-        }
-        self.mapView.delegate = self 
+        self.mapView.delegate = self
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
