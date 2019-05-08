@@ -12,7 +12,7 @@ import UserNotifications
 class ViewController: UIViewController {
 
     //image slider: place recommendation
-    var placeImages = [UIImage(named: "place01AddPlan"),UIImage(named: "place02AddPlan")]
+    var placeImages = [UIImage(named: "place01AddPlan"),UIImage(named: "place02AddPlan"),UIImage(named: "place03AddPlan"), UIImage(named: "place04AddPlan")]
     
     //action when "new trip" button tapped
     @IBAction func newTripTap(_ sender: UIButton) {

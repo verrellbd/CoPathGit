@@ -11,7 +11,7 @@ import MapKit
 
 class AddDestinationViewController: UIViewController, UISearchBarDelegate {
     
-    var recommendationImages = [UIImage(named: "rec1")]
+    var recommendationImages = [UIImage(named: "jogja01"),UIImage(named: "jogja02"),UIImage(named: "jogja03"),UIImage(named: "jogja04")]
     let searchController = UISearchController(searchResultsController: nil)
     let searchButton = UIBarButtonItem()
     @IBOutlet weak var destinatioMap: MKMapView!
