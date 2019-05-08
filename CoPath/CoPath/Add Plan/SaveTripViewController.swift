@@ -139,34 +139,37 @@ class SaveTripViewController: UIViewController, MKMapViewDelegate {
             self.mapView.addAnnotation(annotaion)
         }
         
-        for idx in 0..<LocationModel.location.count-1 {
-            
-            let sourceCoord = CLLocationCoordinate2DMake(LocationModel.location[idx].latitude!, LocationModel.location[idx].longitude!)
-            
-            let destCoord = CLLocationCoordinate2DMake(LocationModel.location[idx+1].latitude!, LocationModel.location[idx+1].longitude!)
-            
-            let source = MKPlacemark(coordinate: sourceCoord)
-            let dest = MKPlacemark(coordinate: destCoord)
-            let directionRequest = MKDirections.Request()
-            directionRequest.source = MKMapItem(placemark: source)
-            directionRequest.destination = MKMapItem(placemark: dest)
-            directionRequest.transportType = .automobile
-            let directions = MKDirections(request: directionRequest)
-            directions.calculate { (response, error) in
-                guard let directionResonse = response else {
-                    if let error = error {
-                        print("we have error getting directions==\(error.localizedDescription)")
-                    }
-                    return
-                }
-                let route = directionResonse.routes[0]
-                self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+        if LocationModel.location.count != 0 {
+            for idx in 0..<LocationModel.location.count-1 {
                 
-                let rect = route.polyline.boundingMapRect
-                self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+                let sourceCoord = CLLocationCoordinate2DMake(LocationModel.location[idx].latitude!, LocationModel.location[idx].longitude!)
+                
+                let destCoord = CLLocationCoordinate2DMake(LocationModel.location[idx+1].latitude!, LocationModel.location[idx+1].longitude!)
+                
+                let source = MKPlacemark(coordinate: sourceCoord)
+                let dest = MKPlacemark(coordinate: destCoord)
+                let directionRequest = MKDirections.Request()
+                directionRequest.source = MKMapItem(placemark: source)
+                directionRequest.destination = MKMapItem(placemark: dest)
+                directionRequest.transportType = .automobile
+                let directions = MKDirections(request: directionRequest)
+                directions.calculate { (response, error) in
+                    guard let directionResonse = response else {
+                        if let error = error {
+                            print("we have error getting directions==\(error.localizedDescription)")
+                        }
+                        return
+                    }
+                    let route = directionResonse.routes[0]
+                    self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+                    
+                    let rect = route.polyline.boundingMapRect
+                    self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+                }
+                // Do any additional setup after loading the view.
             }
-            // Do any additional setup after loading the view.
         }
+        
         self.mapView.delegate = self
     }
     
