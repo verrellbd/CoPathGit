@@ -314,10 +314,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImageProfile" translatesAutoresizingMaskIntoConstraints="NO" id="01e-mp-BHg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="01e-mp-BHg">
                                 <rect key="frame" x="80" y="133" width="253" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORp-nf-Bhb">
+                                <rect key="frame" x="234" y="237" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="editProfilePic"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9L5-vn-IIU"/>
@@ -1113,10 +1118,11 @@
     <resources>
         <image name="Messages Image(261726984) copy" width="74" height="74"/>
         <image name="addPlanEnabled" width="24" height="24"/>
+        <image name="editProfilePic" width="50" height="50"/>
         <image name="historyLogo" width="25" height="25"/>
         <image name="notifEnabled" width="24" height="24"/>
         <image name="plansEnabled" width="24" height="24"/>
         <image name="profileEnabled" width="24" height="24"/>
-        <image name="profileImageProfile" width="371" height="371"/>
+        <image name="profileImage" width="213" height="213"/>
     </resources>
 </document>
