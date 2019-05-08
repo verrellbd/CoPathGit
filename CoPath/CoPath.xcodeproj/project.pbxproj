@@ -118,7 +118,6 @@
 		2673C8EF227DC5550015D61D /* Add Plan */ = {
 			isa = PBXGroup;
 			children = (
-				2673C8F9227DD8A10015D61D /* AddDestinationViewController.swift */,
 				2673C8EB227CB6540015D61D /* PlaceRecommendationCell.swift */,
 				261F49B0227AD2FF0050C89B /* ViewController.swift */,
 				D98F5A6C227D2520007C24C5 /* DetailCityViewController.swift */,
@@ -128,6 +127,7 @@
 				D98F5A6A227C95AA007C24C5 /* CityCell.swift */,
 				D98F5A66227C9226007C24C5 /* Image.swift */,
 				2673C8F7227DD1F00015D61D /* RecommendationCell.swift */,
+				2673C8F9227DD8A10015D61D /* AddDestinationViewController.swift */,
 				D9B5A6F1227DE06F0076929D /* ListDestination.swift */,
 				D9B5A6F3227DE08E0076929D /* ListDestinationCell.swift */,
 				2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */,

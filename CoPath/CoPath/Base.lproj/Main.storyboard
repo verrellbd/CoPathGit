@@ -314,10 +314,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImageProfile" translatesAutoresizingMaskIntoConstraints="NO" id="01e-mp-BHg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="01e-mp-BHg">
                                 <rect key="frame" x="80" y="133" width="253" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORp-nf-Bhb">
+                                <rect key="frame" x="234" y="237" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="editProfilePic"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9L5-vn-IIU"/>
@@ -903,9 +908,6 @@
                                                     <rect key="frame" x="333" y="13" width="47" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="See All"/>
-                                                    <connections>
-                                                        <segue destination="i1f-bY-pBa" kind="show" id="kFM-TY-diN"/>
-                                                    </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7T8-hp-gzh">
                                                     <rect key="frame" x="41" y="209" width="165" height="110"/>
@@ -954,34 +956,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kor-EG-Udt">
-                                <rect key="frame" x="0.0" y="88" width="414" height="262"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerPicPlacesOnlyWeKnow" translatesAutoresizingMaskIntoConstraints="NO" id="Kor-EG-Udt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="306"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="y5t-qv-cb1">
-                                <rect key="frame" x="20" y="370" width="374" height="400"/>
+                                <rect key="frame" x="20" y="370" width="374" height="449"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="1ou-a9-Wsx" userLabel="Stack View baris 1">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="120"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2XR-u0-P7M">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic01PlacesOnlyWeKnow" translatesAutoresizingMaskIntoConstraints="NO" id="2XR-u0-P7M">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="180" id="k0e-E9-4go"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XI4-jm-5Zw">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic02PlacesOnlyWeKnow" translatesAutoresizingMaskIntoConstraints="NO" id="XI4-jm-5Zw">
                                                 <rect key="frame" x="194" y="0.0" width="180" height="120"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="AGv-mB-fOt" userLabel="Stack View baris 2">
-                                        <rect key="frame" x="0.0" y="140" width="374" height="120"/>
+                                        <rect key="frame" x="0.0" y="140" width="374" height="169"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ZK-ps-HaP">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic03PlacesOnlyWeKnow" translatesAutoresizingMaskIntoConstraints="NO" id="5ZK-ps-HaP">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="169"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OlU-pj-G9L">
-                                                <rect key="frame" x="194" y="0.0" width="180" height="120"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic04PlacesOnlyWeKnow" translatesAutoresizingMaskIntoConstraints="NO" id="OlU-pj-G9L">
+                                                <rect key="frame" x="194" y="0.0" width="180" height="169"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="180" id="Kwi-CV-7lE"/>
                                                 </constraints>
@@ -989,12 +991,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="d8N-kH-yKZ" userLabel="Stack View baris 3">
-                                        <rect key="frame" x="0.0" y="280" width="374" height="120"/>
+                                        <rect key="frame" x="0.0" y="329" width="374" height="120"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-3H-HJ6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic05PlacesOnlyWeKnow" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-3H-HJ6">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KdG-OV-5Ek">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic06PlacesOnlyWeKnow" translatesAutoresizingMaskIntoConstraints="NO" id="KdG-OV-5Ek">
                                                 <rect key="frame" x="194" y="0.0" width="180" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="180" id="SUg-sk-Ubx"/>
@@ -1113,10 +1115,18 @@
     <resources>
         <image name="Messages Image(261726984) copy" width="74" height="74"/>
         <image name="addPlanEnabled" width="24" height="24"/>
+        <image name="editProfilePic" width="50" height="50"/>
+        <image name="headerPicPlacesOnlyWeKnow" width="414" height="233"/>
         <image name="historyLogo" width="25" height="25"/>
         <image name="notifEnabled" width="24" height="24"/>
+        <image name="pic01PlacesOnlyWeKnow" width="170" height="159"/>
+        <image name="pic02PlacesOnlyWeKnow" width="170" height="159"/>
+        <image name="pic03PlacesOnlyWeKnow" width="170" height="159"/>
+        <image name="pic04PlacesOnlyWeKnow" width="170" height="159"/>
+        <image name="pic05PlacesOnlyWeKnow" width="170" height="159"/>
+        <image name="pic06PlacesOnlyWeKnow" width="170" height="159"/>
         <image name="plansEnabled" width="24" height="24"/>
         <image name="profileEnabled" width="24" height="24"/>
-        <image name="profileImageProfile" width="371" height="371"/>
+        <image name="profileImage" width="213" height="213"/>
     </resources>
 </document>
