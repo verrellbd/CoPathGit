@@ -946,6 +946,8 @@
                                             <outlet property="imageCell1" destination="7T8-hp-gzh" id="cM1-2G-Hae"/>
                                             <outlet property="imageCell2" destination="3OR-JJ-HBr" id="O0w-eV-jdo"/>
                                             <outlet property="imageCell3" destination="Pz3-ay-ZAV" id="1pd-2T-tSA"/>
+                                            <outlet property="subtitle" destination="MCE-bP-03C" id="IS9-1t-E2U"/>
+                                            <outlet property="title" destination="CVb-cK-KiQ" id="ZPT-w6-JKw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

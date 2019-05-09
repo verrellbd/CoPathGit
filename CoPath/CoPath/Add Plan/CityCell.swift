@@ -12,6 +12,9 @@ class CityCell: UITableViewCell {
     @IBOutlet weak var imageCell2: UIImageView!
     @IBOutlet weak var imageCell3: UIImageView!
     @IBOutlet weak var imageCell1: UIImageView!
+    
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var title: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,6 +29,8 @@ class CityCell: UITableViewCell {
         imageCell1.image = image.image1
         imageCell2.image = image.image2
         imageCell3.image = image.image3
+        title.text = image.title
+        subtitle.text = image.title
     }
 
 }
