@@ -10,6 +10,21 @@ import UIKit
 
 class PlanDetailViewController: UIViewController {
     
+    @IBAction func shareButton(_ sender: UIBarButtonItem) {
+        let discardAlert = UIAlertController(title: "Delete All", message: "Are you sure want to delete all messages ? All changes will be lost.", preferredStyle: UIAlertController.Style.alert)
+        
+        discardAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {(action: UIAlertAction!) in
+            
+        }))
+        
+        discardAlert.addAction(UIAlertAction(title: "Sign In", style: .default, handler: {(action: UIAlertAction!) in
+            //self.navigationController?.popViewController(animated: true)
+            self.performSegue(withIdentifier: "goToSignIn", sender: self)
+        }))
+        
+        self.present(discardAlert, animated: true, completion: nil)
+    }
+    
     let list = ["Bali Botanical Garden", "Kuta Beach", "Hard Rock Hotel Bali"]
     let number = ["one", "two", "three"]
     

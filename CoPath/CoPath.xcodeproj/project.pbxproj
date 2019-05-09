@@ -31,6 +31,7 @@
 		D930A640227F23B00053B782 /* NotifDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930A63F227F23B00053B782 /* NotifDetailViewController.swift */; };
 		D930A64822827C690053B782 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930A64722827C690053B782 /* LocationModel.swift */; };
 		D930A64A22827C750053B782 /* CoordinateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930A64922827C750053B782 /* CoordinateModel.swift */; };
+		D930A6502283CECF0053B782 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930A64F2283CECF0053B782 /* ListCollectionViewCell.swift */; };
 		D98F5A65227C9151007C24C5 /* PickCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A64227C9151007C24C5 /* PickCityViewController.swift */; };
 		D98F5A67227C9226007C24C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A66227C9226007C24C5 /* Image.swift */; };
 		D98F5A6B227C95AA007C24C5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F5A6A227C95AA007C24C5 /* CityCell.swift */; };
@@ -67,6 +68,7 @@
 		D930A63F227F23B00053B782 /* NotifDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifDetailViewController.swift; sourceTree = "<group>"; };
 		D930A64722827C690053B782 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		D930A64922827C750053B782 /* CoordinateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateModel.swift; sourceTree = "<group>"; };
+		D930A64F2283CECF0053B782 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		D98F5A64227C9151007C24C5 /* PickCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCityViewController.swift; sourceTree = "<group>"; };
 		D98F5A66227C9226007C24C5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D98F5A6A227C95AA007C24C5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				2673C8FB227DDADF0015D61D /* SaveTripViewController.swift */,
 				D930A64722827C690053B782 /* LocationModel.swift */,
 				D930A64922827C750053B782 /* CoordinateModel.swift */,
+				D930A64F2283CECF0053B782 /* ListCollectionViewCell.swift */,
 			);
 			path = "Add Plan";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				261F49B7227AD2FF0050C89B /* CoPath.xcdatamodeld in Sources */,
 				2673C8F6227DC7560015D61D /* NotificationViewController.swift in Sources */,
 				D99D90CC227C233000E9D173 /* NewTripViewController.swift in Sources */,
+				D930A6502283CECF0053B782 /* ListCollectionViewCell.swift in Sources */,
 				261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */,
 				2643E6A822828AEC00367E08 /* SignInViewController.swift in Sources */,
 				2673C8F8227DD1F00015D61D /* RecommendationCell.swift in Sources */,
