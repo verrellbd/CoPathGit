@@ -56,7 +56,7 @@ extension PlanDetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 75
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,7 +64,7 @@ extension PlanDetailViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.numberImage.image = UIImage(named: number[indexPath.row] + ".jpg")
         cell.placeLabel.text = list[indexPath.row]
-    //    cell.textLabel?.text = list[indexPath.row]
+        cell.timeLabel?.text = number[indexPath.row]
         return cell
     }
     
