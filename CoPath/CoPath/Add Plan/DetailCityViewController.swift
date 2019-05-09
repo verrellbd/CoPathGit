@@ -14,7 +14,7 @@ class DetailCityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
+        //setUI()
         // Do any additional setup after loading the view.
     }
     
