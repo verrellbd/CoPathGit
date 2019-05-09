@@ -11,6 +11,8 @@ import MapKit
 
 class AddDestinationViewController: UIViewController, UISearchBarDelegate, MKMapViewDelegate {
     
+    @IBOutlet weak var listCollection: UICollectionView!
+    @IBOutlet weak var imageCollection: UICollectionView!
     var recommendationImages = [UIImage(named: "jogja01"),UIImage(named: "jogja02"),UIImage(named: "jogja03"),UIImage(named: "jogja04")]
     let searchController = UISearchController(searchResultsController: nil)
     let searchButton = UIBarButtonItem()
@@ -147,6 +149,7 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate, MKMap
                 let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
                 let region = MKCoordinateRegion(center: cordinate, span: span)
                 
+                self.listCollection.reloadData()
                 self.destinatioMap.setRegion(region, animated: true)
             }
         }
@@ -165,12 +168,25 @@ class AddDestinationViewController: UIViewController, UISearchBarDelegate, MKMap
 
 extension AddDestinationViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return recommendationImages.count
+        if collectionView == imageCollection {
+            return recommendationImages.count
+        } else {
+            return LocationModel.location.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recommendationCell", for: indexPath) as? RecommendationCell
-        cell?.recommendationImg.image = recommendationImages[indexPath.row]
-        return cell!
+        if collectionView == imageCollection {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recommendationCell", for: indexPath) as? RecommendationCell
+            cell?.recommendationImg.image = recommendationImages[indexPath.row]
+            return cell!
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "listCell", for: indexPath) as? ListCollectionViewCell
+            cell?.listLabel.text = tempat[indexPath.row].title
+            //print(indexPath.row)
+            return cell!
+        }
     }
+    
+   
 }
