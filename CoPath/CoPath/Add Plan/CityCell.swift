@@ -30,7 +30,7 @@ class CityCell: UITableViewCell {
         imageCell2.image = image.image2
         imageCell3.image = image.image3
         title.text = image.title
-        subtitle.text = image.title
+        subtitle.text = image.subtitle
     }
 
 }

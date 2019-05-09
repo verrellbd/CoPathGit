@@ -21,9 +21,9 @@ class PickCityViewController: UIViewController {
     }
     
     func createArray() -> [Image]{
-        let images1 = Image(image1: #imageLiteral(resourceName: "headerPicPlacesOnlyWeKnow"), image2: #imageLiteral(resourceName: "mentawaiPicNotifMessage"), image3: #imageLiteral(resourceName: "cityPopUpAddCity"), title: "Places Only We Know", subtitle: "Sometimes the diamonds are unrecognized")
-        let images2 = Image(image1: #imageLiteral(resourceName: "cityPopUpAddCity"), image2: #imageLiteral(resourceName: "headerPicPlacesOnlyWeKnow"), image3: #imageLiteral(resourceName: "mentawaiPicNotifMessage"), title: "Historical Beauty", subtitle: "Looking back at the lengths we have gone to in the name of adventure")
-        let images3 = Image(image1: #imageLiteral(resourceName: "mentawaiPicNotifMessage"), image2: #imageLiteral(resourceName: "cityPopUpAddCity"), image3: #imageLiteral(resourceName: "headerPicPlacesOnlyWeKnow"), title: "Historical Beauty", subtitle: "Looking back at the lengths we have gone to in the name of adventure")
+        let images1 = Image(image1: #imageLiteral(resourceName: "city0201PickCity"), image2: #imageLiteral(resourceName: "city0101PickCity"), image3: #imageLiteral(resourceName: "city0301PickCity"), title: "Places Only We Know", subtitle: "Sometimes the diamonds are unrecognized")
+        let images2 = Image(image1: #imageLiteral(resourceName: "city0201PickCity"), image2: #imageLiteral(resourceName: "city0102PickCity"), image3: #imageLiteral(resourceName: "city0301PickCity"), title: "Historical Beauty", subtitle: "Looking back at the lengths we have gone to in the name of adventure")
+        let images3 = Image(image1: #imageLiteral(resourceName: "city0201PickCity"), image2: #imageLiteral(resourceName: "city0101PickCity"), image3: #imageLiteral(resourceName: "city0301PickCity"), title: "Historical Beauty", subtitle: "Looking back at the lengths we have gone to in the name of adventure")
         return [images1,images2,images3]
     }
     
