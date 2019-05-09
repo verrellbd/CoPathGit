@@ -11,6 +11,7 @@ import UIKit
 class PlanDetailViewController: UIViewController {
     
     let list = ["Bali Botanical Garden", "Kuta Beach", "Hard Rock Hotel Bali"]
+    let number = ["one", "two", "three"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ extension PlanDetailViewController: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 0
         }else {
-            return 3
+            return number.count
         }
     }
     
@@ -44,8 +45,11 @@ extension PlanDetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath)
-        cell.textLabel?.text = list[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath) as! placeTableViewCell
+        
+        cell.numberImage.image = UIImage(named: number[indexPath.row] + ".jpg")
+        cell.placeLabel.text = list[indexPath.row]
+    //    cell.textLabel?.text = list[indexPath.row]
         return cell
     }
     

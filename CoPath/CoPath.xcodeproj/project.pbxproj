@@ -11,6 +11,7 @@
 		0D7CC47B227C7D4A00962C5F /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */; };
 		0D7CC48B227D2EF600962C5F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */; };
 		0D7CC48D227D43E400962C5F /* OnGoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */; };
+		0DD2C2432283D52E00FD4DE5 /* placeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2C2422283D52E00FD4DE5 /* placeTableViewCell.swift */; };
 		261F49AF227AD2FF0050C89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261F49AE227AD2FF0050C89B /* AppDelegate.swift */; };
 		261F49B1227AD2FF0050C89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261F49B0227AD2FF0050C89B /* ViewController.swift */; };
 		261F49B4227AD2FF0050C89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261F49B2227AD2FF0050C89B /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		0D7CC47A227C7D4A00962C5F /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingViewController.swift; sourceTree = "<group>"; };
+		0DD2C2422283D52E00FD4DE5 /* placeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeTableViewCell.swift; sourceTree = "<group>"; };
 		261F49AB227AD2FF0050C89B /* CoPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261F49AE227AD2FF0050C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261F49B0227AD2FF0050C89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				0D7CC48A227D2EF600962C5F /* HistoryViewController.swift */,
 				0D7CC48C227D43E400962C5F /* OnGoingViewController.swift */,
 				0D6EC42B2280164A0062A27B /* PlanDetailViewController.swift */,
+				0DD2C2422283D52E00FD4DE5 /* placeTableViewCell.swift */,
 			);
 			path = Plans;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				0D6EC42C2280164A0062A27B /* PlanDetailViewController.swift in Sources */,
 				2673C8F4227DC6F80015D61D /* ProfileViewController.swift in Sources */,
 				D9B5A6F2227DE06F0076929D /* ListDestination.swift in Sources */,
+				0DD2C2432283D52E00FD4DE5 /* placeTableViewCell.swift in Sources */,
 				D930A640227F23B00053B782 /* NotifDetailViewController.swift in Sources */,
 				2673C8EC227CB6540015D61D /* PlaceRecommendationCell.swift in Sources */,
 				D9B5A6F4227DE08E0076929D /* ListDestinationCell.swift in Sources */,
