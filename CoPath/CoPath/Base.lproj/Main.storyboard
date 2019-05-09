@@ -170,10 +170,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="B29-qI-gT8">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="action" id="noh-ep-j1G"/>
+                            <barButtonItem systemItem="action" id="noh-ep-j1G">
+                                <connections>
+                                    <action selector="shareButton:" destination="ywN-Pi-dB1" id="MJe-o1-JSL"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Edit" id="AUx-ey-Lys"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <segue destination="B0A-PW-cOS" kind="show" identifier="goToSignIn" id="xY4-4I-poB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVe-cq-Jx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -964,14 +971,14 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVb-cK-KiQ">
-                                                    <rect key="frame" x="20" y="11" width="67" height="34"/>
+                                                    <rect key="frame" x="20" y="11" width="278" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCE-bP-03C">
-                                                    <rect key="frame" x="20" y="53" width="42" height="21"/>
+                                                    <rect key="frame" x="20" y="53" width="278" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1207,6 +1214,6 @@
         <image name="profileImage" width="213" height="213"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="o2B-vg-IMF"/>
+        <segue reference="xY4-4I-poB"/>
     </inferredMetricsTieBreakers>
 </document>
